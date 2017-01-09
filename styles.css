@@ -1,0 +1,37 @@
+body {
+	color: #333333;
+	background-color: #EEEEEE;
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: 'noto sans', arial, sans-serif;
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+.container {
+	width: 650px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.name {
+
+}
+
+.links a {
+	color: #333333;
+	text-decoration: none;
+}
+
+.links a:hover {
+	color: #333333;
+	text-decoration: underline;
+}
