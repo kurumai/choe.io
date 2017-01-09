@@ -52,6 +52,7 @@ p {
 	border-style: solid;
 	border-width: 1.5px;
 	padding: 0 8 0 6;
+	font-weight: bold;
 }
 
 .block-text {
