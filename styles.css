@@ -22,10 +22,6 @@ p {
 	justify-content: space-between;
 }
 
-.name {
-
-}
-
 .links a {
 	color: #333333;
 	text-decoration: none;
@@ -34,4 +30,19 @@ p {
 .links a:hover {
 	color: #333333;
 	text-decoration: underline;
+}
+
+.links #contact {
+	border-style: solid;
+	border-width: 1.5px;
+	padding: 0px 8px 0px 6px;
+	/*text-align: center;*/
+}
+
+.block-text {
+	display: none;
+}
+
+.active {
+	display: inline;
 }
