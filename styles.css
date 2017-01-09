@@ -11,32 +11,47 @@ p {
 }
 
 .container {
+	display: flex;
+	flex-direction: column;
 	width: 650px;
-	margin: auto;
-	margin-top: 30px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin-top: 30px;*/
 }
 
 .nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: flex-end;
 }
 
-.links a {
+.name {
+	font-size: 40px;
+}
+
+.links {
+	margin-bottom: 8px;
+}
+
+.nav a {
 	color: #333333;
 	text-decoration: none;
 }
 
-.links a:hover {
-	color: #333333;
+.nav a:hover {
 	text-decoration: underline;
+}
+
+.nav .name a:hover {
+	text-decoration: none;
 }
 
 .links #contact {
 	border-style: solid;
 	border-width: 1.5px;
-	padding: 0px 8px 0px 6px;
-	/*text-align: center;*/
+	padding: 0 8 0 6;
 }
 
 .block-text {
@@ -45,4 +60,18 @@ p {
 
 .active {
 	display: inline;
+	flex-grow: 1;
+}
+
+.bottom-bar {
+	align-self: center;
+}
+
+.bottom-img {
+	width: 30px;
+}
+
+.bottom-img a {
+	text-decoration: none;
+	border: 0;
 }
