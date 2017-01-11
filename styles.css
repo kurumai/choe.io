@@ -2,7 +2,7 @@ body {
 	color: #333333;
 	background-color: #EEEEEE;
 	line-height: 1.8;
-	font-size: 16px;
+	font-size: 1em;
 	font-family: 'noto sans', arial, sans-serif;
 }
 
@@ -24,6 +24,7 @@ p {
 }
 
 iframe {
+	text-align: center;
 	margin-top: 15px;
 	width: 650px;
 	height: 80%;
@@ -84,7 +85,7 @@ iframe {
 }
 
 .bottom-bar {
-	padding: 10 0 5 0;
+	padding: 5 0 5 0;
 	align-self: center;
 }
 
@@ -139,4 +140,19 @@ iframe {
 
 .resume-btn {
 	padding: 8px 16px;
+}
+
+@media screen and (max-width: 650px) {
+	.container, .nav {
+		width: auto;
+	}
+	iframe {
+		display: none;
+	}
+	.active {
+		flex-grow: 0;
+	}
+	.resume {
+		padding-bottom: 20px;
+	}
 }
