@@ -6,6 +6,19 @@ body {
 	font-family: 'noto sans', arial, sans-serif;
 }
 
+a {
+	color: #4b8cf4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #6eaef8;
+}
+
+a:active {
+	color: #3a7be3;
+}
+
 p {
 	margin: 0 0 20px;
 }
@@ -56,15 +69,9 @@ iframe {
 	text-decoration: none;
 }
 
-.links #contact {
-	border-style: solid;
-	border-width: 1.5px;
-	padding: 0 8 0 8;
-	font-weight: bold;
-}
-
 .block-text {
 	display: none;
+	margin-top: 15px;
 }
 
 .active {
@@ -92,28 +99,44 @@ iframe {
 .splash-img {
 	display: block;
 	margin: auto;
-	margin-top: 15px;
 	width: 80%;
 	border-radius: 5px;
 }
 
-.spacer {
-	padding-top: 15px;
-}
-
-.resume-btn {
+.button {
 	color: #EEEEEE;
-	padding: 8px 16px;
+	padding: 0px 8px;
   text-align: center;
 	text-decoration: none;
 	background-color: #4b8cf4;
 	border-radius: 2px;
 }
 
-.resume-btn:hover {
+.button:hover {
 	background-color: #6eaef8;
 }
 
-.resume-btn:active {
+.button:active {
 	background-color: #3a7be3;
+}
+
+#contact {
+	color: #EEEEEE;
+	padding: 4px 8px;
+  text-align: center;
+	text-decoration: none;
+	background-color: #4b8cf4;
+	border-radius: 2px;
+}
+
+#contact:hover {
+	background-color: #6eaef8;
+}
+
+#contact:active {
+	background-color: #3a7be3;
+}
+
+.resume-btn {
+	padding: 8px 16px;
 }
