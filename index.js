@@ -4,5 +4,5 @@ var app = express();
 
 app.use(express.static(__dirname));
 
-console.log('Listening on port 3000');
-app.listen(3000);
+console.log('Listening on port 80');
+app.listen(80);

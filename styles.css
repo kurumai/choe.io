@@ -71,6 +71,11 @@ p {
 	align-self: center;
 }
 
+.bottom-bar img:hover{
+	opacity: 0.8;
+}
+
 .bottom-img {
 	width: 30px;
 }
+
