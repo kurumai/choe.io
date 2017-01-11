@@ -72,13 +72,13 @@ iframe {
 
 .block-text {
 	display: none;
-	flex-grow: 0;
+	/*flex-grow: 0;*/
 	margin-top: 15px;
 }
 
 .active {
 	display: inline;
-	flex-grow: 1;
+	/*flex-grow: 1;*/
 }
 
 .resume {
@@ -88,7 +88,6 @@ iframe {
 .bottom-bar {
 	width: 100%;
 	padding: 5 0 5 0;
-
 	text-align: center;
 }
 
@@ -153,7 +152,7 @@ iframe {
 		display: none;
 	}
 	.active {
-		flex-grow: 0;
+		/*flex-grow: 0;*/
 	}
 	.resume {
 		padding-bottom: 20px;
