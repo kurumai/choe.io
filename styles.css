@@ -10,6 +10,12 @@ p {
 	margin: 0 0 20px;
 }
 
+iframe {
+	margin-top: 15px;
+	width: 650px;
+	height: 80%;
+}
+
 .nav {
 	width: 650px;
 	display: flex;
@@ -66,6 +72,10 @@ p {
 	flex-grow: 1;
 }
 
+.resume {
+	text-align: center;
+}
+
 .bottom-bar {
 	padding: 10 0 5 0;
 	align-self: center;
@@ -79,3 +89,31 @@ p {
 	width: 30px;
 }
 
+.splash-img {
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.spacer {
+	padding-top: 15px;
+}
+
+.resume-btn {
+	color: #EEEEEE;
+	padding: 8px 16px;
+  text-align: center;
+	text-decoration: none;
+	background-color: #4b8cf4;
+	border-radius: 2px;
+}
+
+.resume-btn:hover {
+	background-color: #6eaef8;
+}
+
+.resume-btn:active {
+	background-color: #3a7be3;
+}

@@ -3,39 +3,33 @@
 <title>Eugene Choe</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="nav">
 		<div class="name">
-			<a href="#" onClick="ActiveTab('.about')">Eugene Choe</a>
+			<a href="#" onClick="ActiveTab('.splash')">Eugene Choe</a>
 		</div>
 		<div class="links">
-			<a href="#" onclick="ActiveTab('.bio')">Bio</a> | 
+			<a href="#" onclick="ActiveTab('.about')">About</a> | 
 			<a href="#" onclick="ActiveTab('.resume')">Resume</a> |
 			<a href="#" onclick="ActiveTab('.misc')">Misc</a> |
 			<a href="#" id="contact" onclick="ActiveTab('.contact')">Contact</a>
 		</div>
 	</div>
 	<div class="container">
-		<div class="block-text about active">
-			<h1>About</h1>
+		<div class="block-text splash active">
+			<img src="assets/splash-profile.jpg" class="splash-img">
 			<h3>
-			Hello.
+			Hello, friend.
 			</h3>
 			<p>
-			I’m Eugene, a software engineer based in Oakland, California. 
-			I: 
-			love turning abstract ideas into useful applications that people can use to improve their quality of life.
-			believe in taking the time to do things the right way the first time. 
-			operate on the principle that everyone has something to teach me. 
-			live for the elusive moments of clarity and accomplishment that come with the completion of a job well done.
-			look forward to a future where an increasingly digital world allows people to spend more time doing the things they love. 
+			I’m Eugene, a software engineer based in Oakland, California. I love the creative process of turning abstract ideas into useful applications that people can use to make life easier, and envision a future where an increasingly digital world affords everyone more time to do the things they love.
 			</p>
 		</div>
 
-		<div class="block-text bio">
+		<div class="block-text about">
 			<h1>About</h1>
 			<p>
 			I hold American, Canadian, and Korean passports, but really identify myself as a citizen of the world. Born in Toronto, I spent most of my formative years in the Bay Area. Fueled by a desire to explore an unknown city and an interest with working in a quantitative field, I left for New York University and graduated with a B.S. in Finance, after which I worked on trading floors for a few years—long enough to know that I had zero interest in working in the world of finance.
@@ -50,8 +44,9 @@
 		</div>
 
 		<div class="block-text resume">
-			<h1>Resume</h1>
-			<a href="https://goo.gl/99TfvG">Download Resume in PDF</a>
+			<div class="spacer"></div>
+			<a href="https://goo.gl/99TfvG" class="resume-btn">Download PDF Resume</a>
+			<iframe src="https://docs.google.com/document/d/1PfGjbEM0O8xz-dhwYrK_f8OUdl1KxfnRR2_QICrC0vg/pub?embedded=true" frameborder="0"></iframe>
 		</div>
 
 		<div class="block-text misc">
@@ -70,6 +65,17 @@
 				<li>Passport</li>
 				<li>Mocha/Chai</li>
 			</ul>
+
+			JavaScript
+			React/Redux
+			nodeJS
+
+
+
+			Thinking about:
+			Blockchain
+			Authentication
+
 			
 			Cooking meals from scratch for 1 - 50 people
 
@@ -88,10 +94,10 @@
 			Or shoot me an e-mail at eugene@choe.io.
 		</div>
 		<div class="bottom-bar">
-			<a href="mailto:eugene@choe.io" target="_blank"><img src="svg/mail.svg" class="bottom-img" alt="E-mail"></a>
-			<a href="https://github.com/heug" target="_blank"><img src="svg/github.svg" class="bottom-img" alt="Github"></a>
-			<a href="https://www.linkedin.com/in/eugene-choe" target="_blank"><img src="svg/linkedin.svg" class="bottom-img" alt="LinkedIn"></a>
-			<a href="https://www.instagram.com/generalchoe" target="_blank"><img src="svg/instagram.svg" class="bottom-img" alt="Instagram"></a>
+			<a href="mailto:eugene@choe.io" target="_blank"><img src="assets/svg/mail.svg" class="bottom-img" alt="E-mail"></a>
+			<a href="https://github.com/heug" target="_blank"><img src="assets/svg/github.svg" class="bottom-img" alt="Github"></a>
+			<a href="https://www.linkedin.com/in/eugene-choe" target="_blank"><img src="assets/svg/linkedin.svg" class="bottom-img" alt="LinkedIn"></a>
+			<a href="https://www.instagram.com/generalchoe" target="_blank"><img src="assets/svg/instagram.svg" class="bottom-img" alt="Instagram"></a>
 		</div>
 	</div>
 <script>
