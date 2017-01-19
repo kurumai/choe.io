@@ -46,55 +46,55 @@
 		<div class="block-text projects active">
 			<h1>Projects</h1>
 
-			<img src="assets/mynanny/1.png" class="project-img" alt="MyNanny">
-			<img src="assets/radradio/1.jpg" class="project-img" alt="Radradio">
-			<img src="assets/roomly/1.png" class="project-img" alt="Roomly">
-			<img src="assets/giftminder/1.png" class="project-img" alt="Giftminder">
+			<a href="#modal-1"><img src="assets/mynanny/1.png" class="project-img" alt="MyNanny"></a>
+			<a href="#modal-2"><img src="assets/radradio/1.jpg" class="project-img" alt="Radradio"></a>
+			<a href="#modal-3"><img src="assets/roomly/1.png" class="project-img" alt="Roomly"></a>
+			<a href="#modal-4"><img src="assets/giftminder/1.png" class="project-img" alt="Giftminder"></a>
 			<br/>
-			<button id="mynanny">My Nanny</button>
-			<br/>
-			<div class="modal-content">
-				<div class="modal-1 modal-content">
-					Management application for your children and their chores
-					React Redux based front end with Express and MongoDB backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
-				</div>
-				<div class="modal-2 modal-content">
-					Live Podcast Broadcasting Service
-				</div>
-				<div class="modal-3 modal-content">
-					Find a new roommate through shared interests
-					Web application to assist in finding a new roommate in your Facebook network. Built with React, Redux, Facebook OAuth, Express, MongoDB, and Webpack.
-				</div>
-				<div class="modal-4 modal-content">
-					Reminder app for gifts and friends
+			<div class="modal-dialog" id="modal-1">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<div id="modal-1-title">
+						Management application for your children and their chores
+					</div>
+					<div id="modal-1-body">
+						React Redux based front end with Express and MongoDB backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
+					</div>
 				</div>
 			</div>
-
-			<ul>
-				<li>Javascript</li>
-				<li>React</li>
-				<li>Redux</li>
-				<li>Angular 1.x</li>
-				<li>NodeJS</li>
-				<li>SQL</li>
-				<li>MongoDB</li>
-				<li>JQuery</li>
-				<li>CSS</li>
-				<li>D3</li>
-				<li>Passport</li>
-				<li>Mocha/Chai</li>
-				<li>Nunchuck</li>
-				<li>Cooking for up to 50 people</li>
-			</ul>
-			<ul>
-				<li>Thinking about:</li>
-				<li>Blockchain</li>
-				<li>Authentication</li>
-			</ul>
-			<ul>
-				<li>Not work:</li>
-				<li>Yoga, Motorcycling, Cooking, Hiking</li>
-			</ul>
+			<div class="modal-dialog" id="modal-2">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<div id="modal-2-title">
+						Live Podcast Broadcasting Service
+					</div>
+					<div id="modal-2-body">
+						React Redux based front end with Express and MongoDB backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
+					</div>
+				</div>
+			</div>
+			<div class="modal-dialog" id="modal-3">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<div id="modal-3-title">
+						Find a new roommate through shared interests
+					</div>
+					<div id="modal-3-body">
+						Web application to assist in finding a new roommate in your Facebook network. Built with React, Redux, Facebook OAuth, Express, MongoDB, and Webpack.
+					</div>
+				</div>
+			</div>
+			<div class="modal-dialog" id="modal-4">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<div id="modal-4-title">
+						Reminder app for gifts and friends
+					</div>
+					<div id="modal-4-body">
+						React Redux based front end with Express and MongoDB backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="block-text resume">
 			<a href="https://goo.gl/99TfvG" class="button resume-btn">Download PDF Resume</a><br/>
@@ -109,6 +109,10 @@
 	</div>
 <script>
 function ActiveTab(name) {
+	$('.block-text').removeClass('active');
+	$(name).addClass('active');
+};
+function ActiveModal(name) {
 	$('.block-text').removeClass('active');
 	$(name).addClass('active');
 };
