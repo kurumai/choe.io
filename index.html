@@ -44,8 +44,6 @@
 			</p>
 		</div>
 		<div class="block-text projects active">
-			<h1>Projects</h1>
-
 			<a href="#modal-1"><img src="assets/mynanny/1.png" class="project-img" alt="MyNanny"></a>
 			<a href="#modal-2"><img src="assets/radradio/1.jpg" class="project-img" alt="Radradio"></a>
 			<a href="#modal-3"><img src="assets/roomly/1.png" class="project-img" alt="Roomly"></a>
@@ -54,10 +52,11 @@
 			<div class="modal-dialog" id="modal-1">
 				<div>
 					<a href="#close" title="Close" class="close">X</a>
-					<div id="modal-1-title">
-						Management application for your children and their chores
+					<div class="modal-title">
+						myNanny - Management application for your children and their chores
 					</div>
-					<div id="modal-1-body">
+					<img src="assets/mynanny/1.png" class="modal-img">
+					<div class="modal-body">
 						React Redux based front end with Express and MongoDB backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
 					</div>
 				</div>
@@ -65,21 +64,23 @@
 			<div class="modal-dialog" id="modal-2">
 				<div>
 					<a href="#close" title="Close" class="close">X</a>
-					<div id="modal-2-title">
+					<div class="modal-title">
 						Live Podcast Broadcasting Service
 					</div>
-					<div id="modal-2-body">
-						React Redux based front end with Express and MongoDB backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
+					<img src="assets/radradio/1.jpg" class="modal-img">
+					<div class="modal-body">
+						Lorem ipsum fox brown jumped over the lazy dog
 					</div>
 				</div>
 			</div>
 			<div class="modal-dialog" id="modal-3">
 				<div>
 					<a href="#close" title="Close" class="close">X</a>
-					<div id="modal-3-title">
+					<div class="modal-title">
 						Find a new roommate through shared interests
 					</div>
-					<div id="modal-3-body">
+					<img src="assets/roomly/1.png" class="modal-img">
+					<div class="modal-body">
 						Web application to assist in finding a new roommate in your Facebook network. Built with React, Redux, Facebook OAuth, Express, MongoDB, and Webpack.
 					</div>
 				</div>
@@ -87,10 +88,11 @@
 			<div class="modal-dialog" id="modal-4">
 				<div>
 					<a href="#close" title="Close" class="close">X</a>
-					<div id="modal-4-title">
+					<div class="modal-title">
 						Reminder app for gifts and friends
 					</div>
-					<div id="modal-4-body">
+					<img src="assets/giftminder/1.png" class="modal-img">
+					<div class="modal-body">
 						React Redux based front end with Express and MongoDB backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
 					</div>
 				</div>
@@ -112,10 +114,13 @@ function ActiveTab(name) {
 	$('.block-text').removeClass('active');
 	$(name).addClass('active');
 };
-function ActiveModal(name) {
-	$('.block-text').removeClass('active');
-	$(name).addClass('active');
-};
+
+// TODO: Implement escape key listener to close modal dialog
+// $(document).keyup(function(e) {
+//   if (e.keyCode == 27) {
+//   	$('#close').click();
+//   }
+// });
 </script>
 </body>
 </html>
