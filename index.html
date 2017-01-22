@@ -51,7 +51,7 @@
 			<br/>
 			<div class="modal-dialog" id="modal-1">
 				<div>
-					<a href="#close" title="Close" class="close">X</a>
+					<a href="#" title="Close" class="close">X</a>
 					<div class="modal-title">
 						myNanny - Management application for your children and their chores
 					</div>
@@ -114,6 +114,10 @@ function ActiveTab(name) {
 	$('.block-text').removeClass('active');
 	$(name).addClass('active');
 };
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) { $('.modal-dialog').fadeOut(500); }  // esc
+});
 
 // TODO: Implement escape key listener to close modal dialog
 // $(document).keyup(function(e) {
