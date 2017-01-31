@@ -115,14 +115,15 @@ function ActiveTab(name) {
 	$(name).addClass('active');
 };
 
+function hideModal(e) {
+  if (e.keyCode === 27 || e.type === 'click') {
+    window.location.hash = "#";
+  }
+};
+
 $(document).keyup(hideModal);
 $(".modal-dialog").click(hideModal);
 
-function hideModal(e) {
-    if (e.keyCode === 27 || e.type === 'click') {
-        window.location.hash = "#";
-    }
-}
 
 // $(document).keyup(function(e) {
 //   if (e.keyCode === 27) { $('.modal-dialog').fadeOut(500); }  // esc
