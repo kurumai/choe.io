@@ -142,8 +142,17 @@ iframe {
 	padding: 8px 16px;
 }
 
+.img-box {
+	display: inline;
+	width: 320px;
+	height: 200px;
+	margin: 5px;
+}
+
 .project-img {
 	width: 300px;
+	margin: auto;
+	vertical-align: auto;
 }
 
 .project-img:hover {
@@ -203,9 +212,11 @@ iframe {
 .modal-title {
 	font-size: 1.2em;
 	font-weight: bold;
+	padding-bottom: 10px;
 }
 
 .modal-body {
+	padding-top: 10px;
 	text-align: left;
 	font-size: .9em;
 }
