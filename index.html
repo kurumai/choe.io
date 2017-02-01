@@ -19,7 +19,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="block-text splash">
+		<div class="block-text splash active">
 			<img src="assets/splash-profile.jpg" class="splash-img">
 			<h3>
 			Hello, friend.
@@ -43,7 +43,7 @@
 			Let’s build something awesome together 🙌.
 			</p>
 		</div>
-		<div class="block-text projects active">
+		<div class="block-text projects">
 			<div class="img-box"><a href="#modal-1"><img src="assets/mynanny/1.png" class="project-img" alt="MyNanny"></a></div>
 			<div class="img-box"><a href="#modal-2"><img src="assets/radradio/1.png" class="project-img" alt="Radradio"></a></div>
 			<br/>
@@ -54,11 +54,11 @@
 				<div>
 					<a href="#" title="Close" class="close">X</a>
 					<div class="modal-title">
-						myNanny - Management application for your children and their chores
+						myNanny
 					</div>
 					<img src="assets/mynanny/2.png" class="modal-img">
 					<div class="modal-body">
-						React/Redux-based front end with Express and MySQL on the backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
+					  Virtual assistant for managing your children’s curfews and choresParents manage their children through a web portal, and children interact with their Amazon Echo to check in and receive a list of chores. Powered by Amazon Alexa and hosted on AWS Lambda and Express servers, with a front-end using React, Redux, and Bootstrap. 80% test coverage.
 					</div>
 				</div>
 			</div>
@@ -66,11 +66,11 @@
 				<div>
 					<a href="#close" title="Close" class="close">X</a>
 					<div class="modal-title">
-						Radradio - Live Podcast Broadcasting Service
+						Radradio
 					</div>
 					<img src="assets/radradio/2.png" class="modal-img">
 					<div class="modal-body">
-						Lorem ipsum fox brown jumped over the lazy dog
+						Create or listen to live audio streams instantly with live messaging. Streams are archived and available for access after live streams terminate. Built with Kurento Media Server, socket.io, React, Express, Passport, and MongoDB.
 					</div>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 				<div>
 					<a href="#close" title="Close" class="close">X</a>
 					<div class="modal-title">
-						Roomly - Find a new roommate through shared interests
+						Roomly
 					</div>
 					<img src="assets/roomly/2.png" class="modal-img">
 					<div class="modal-body">
@@ -90,11 +90,11 @@
 				<div>
 					<a href="#close" title="Close" class="close">X</a>
 					<div class="modal-title">
-						Giftminder - Reminder app for gifts and friends
+						Giftminder
 					</div>
 					<img src="assets/giftminder/2.png" class="modal-img">
 					<div class="modal-body">
-						React Redux based front end with Express and MongoDB backend. Integrates with the Amazon Alexa platform through AWS Lambda to communicate with our API.
+						A simple application to help you remind yourself of gift ideas for friends and family. Built with Angular 1, Express, and MongoDB. Stylized with Bootstrap.
 					</div>
 				</div>
 			</div>
@@ -124,18 +124,6 @@ function hideModal(e) {
 
 $(document).keyup(hideModal);
 $(".modal-dialog").click(hideModal);
-
-
-// $(document).keyup(function(e) {
-//   if (e.keyCode === 27) { $('.modal-dialog').fadeOut(500); }  // esc
-// });
-
-// TODO: Implement escape key listener to close modal dialog
-// $(document).keyup(function(e) {
-//   if (e.keyCode == 27) {
-//   	$('#close').click();
-//   }
-// });
 </script>
 </body>
 </html>
