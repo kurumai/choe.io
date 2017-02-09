@@ -1,5 +1,5 @@
 {
-  "name": "uberlandlord",
+  "name": "boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heug/uberlandlord.git"
+    "url": "git+https://github.com/heug/boilerplate.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/heug/uberlandlord/issues"
+    "url": "https://github.com/heug/boilerplate/issues"
   },
-  "homepage": "https://github.com/heug/uberlandlord#readme"
+  "homepage": "https://github.com/heug/boilerplate#readme"
 }

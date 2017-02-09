@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-	entry: ['./client/main.js','./client/components/hello/styles.css'],
+	entry: ['./client/main.js','./client/styles.scss'],
 	output: { path: __dirname + '/client/dist', filename: 'bundle.js' },
 	module: {
 		loaders: [
@@ -15,6 +15,10 @@ module.exports = {
 				}
 			},
 			{
+				test: /\.scss$/,
+				loaders: ['style-loader','css-loader','sass-loader']
+			},
+			{
 				test: /\.css$/,
 				loader: 'style-loader!css-loader'
 			}
@@ -24,7 +28,3 @@ module.exports = {
 	// resolve: {
 	// 	extensions: ['.js','.jsx']
 	// }
-			// {
-			// 	test: /\.scss$/,
-			// 	loaders: ['style-loader','css-loader','sass-loader']
-			// },
