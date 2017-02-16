@@ -12116,12 +12116,27 @@ var Hello = function (_React$Component) {
 	}
 
 	_createClass(Hello, [{
-		key: 'render',
+		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
-				'h1',
-				null,
-				'HELLO WORLD'
+				"div",
+				{ "class": "block-text splash active" },
+				_react2.default.createElement("img", { src: "../assets/splash-profile.jpg", "class": "splash-img" }),
+				_react2.default.createElement(
+					"h3",
+					null,
+					"Hello, friend."
+				),
+				_react2.default.createElement(
+					"p",
+					null,
+					"I\u2019m Eugene, a software engineer based in Oakland, California. I love the creative process of turning abstract ideas into useful applications that people can use to make life easier, and envision a future where an increasingly digital world affords everyone more time to do the things they love."
+				),
+				_react2.default.createElement(
+					"p",
+					null,
+					"You'll find me on the hiking trail, in the yoga studio, or on the motorcycle most weekends."
+				)
 			);
 		}
 	}]);
@@ -12154,9 +12169,9 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRouter = __webpack_require__(107);
 
-var _index = __webpack_require__(113);
+var _hello = __webpack_require__(113);
 
-var _index2 = _interopRequireDefault(_index);
+var _hello2 = _interopRequireDefault(_hello);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12164,7 +12179,7 @@ var Routes = function Routes(props) {
 	return _react2.default.createElement(
 		_reactRouter.Router,
 		props,
-		_react2.default.createElement(_reactRouter.Route, { path: '/', component: _index2.default })
+		_react2.default.createElement(_reactRouter.Route, { path: '/', component: _hello2.default })
 	);
 };
 
@@ -13736,9 +13751,9 @@ function parserForArrayFormat(opts) {
 	switch (opts.arrayFormat) {
 		case 'index':
 			return function (key, value, accumulator) {
-				result = /\[(\d*)]$/.exec(key);
+				result = /\[(\d*)\]$/.exec(key);
 
-				key = key.replace(/\[\d*]$/, '');
+				key = key.replace(/\[\d*\]$/, '');
 
 				if (!result) {
 					accumulator[key] = value;
@@ -13754,9 +13769,9 @@ function parserForArrayFormat(opts) {
 
 		case 'bracket':
 			return function (key, value, accumulator) {
-				result = /(\[])$/.exec(key);
+				result = /(\[\])$/.exec(key);
 
-				key = key.replace(/\[]$/, '');
+				key = key.replace(/\[\]$/, '');
 
 				if (!result || accumulator[key] === undefined) {
 					accumulator[key] = value;
