@@ -3,8 +3,8 @@ import React from 'react';
 class Hello extends React.Component {
 	render() {
 		return (
-			<div class="block-text splash active">
-				<img src="../assets/splash-profile.jpg" class="splash-img" />
+			<div className="block-text splash active">
+				<img src="../assets/splash-profile.jpg" className="splash-img" />
 				<h3>
 				Hello, friend.
 				</h3>
