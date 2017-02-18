@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Nav from '../nav';
+import { Row } from 'react-bootstrap';
+import TopNav from '../nav';
 import Hello from '../hello';
 
 class App extends Component {
@@ -10,8 +11,13 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<Nav />
-				<Hello />
+				<Row>
+					<TopNav />
+				</Row>
+				<Row>
+					<Hello />
+					{ this.props.children }
+				</Row>
 			</div>
 		);
 	}
