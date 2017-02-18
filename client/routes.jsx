@@ -10,10 +10,10 @@ import Projects from './components/projects/';
 const Routes = (props) => (
 	<Router {...props}>
 		<Route path='/' component={App}>
-			<Route path='hello' component={Hello} />
+			<IndexRoute component={Hello} />
+			<Route path='about' component={About} />
 			<Route path='resume' component={Resume} />
 			<Route path='projects' component={Projects} />
-			<Route path='about' component={About} />
 		</Route>
 	</Router>
 );
