@@ -12171,10 +12171,6 @@ var _nav = __webpack_require__(115);
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _hello = __webpack_require__(72);
-
-var _hello2 = _interopRequireDefault(_hello);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12206,7 +12202,6 @@ var App = function (_Component) {
 				_react2.default.createElement(
 					_reactBootstrap.Row,
 					null,
-					_react2.default.createElement(_hello2.default, null),
 					this.props.children
 				)
 			);
@@ -12352,10 +12347,6 @@ var _app = __webpack_require__(114);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _nav = __webpack_require__(115);
-
-var _nav2 = _interopRequireDefault(_nav);
-
 var _hello = __webpack_require__(72);
 
 var _hello2 = _interopRequireDefault(_hello);
@@ -12381,7 +12372,6 @@ var Routes = function Routes(props) {
 		_react2.default.createElement(
 			_reactRouter.Route,
 			{ path: '/', component: _app2.default },
-			_react2.default.createElement(_reactRouter.Route, { path: 'nav', component: _nav2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'hello', component: _hello2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'resume', component: _resume2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'projects', component: _projects2.default }),
