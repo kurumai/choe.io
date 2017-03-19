@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
 import TopNav from '../nav';
 
+
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -13,7 +14,7 @@ class App extends Component {
 				<Row>
 					<TopNav />
 				</Row>
-				<Row>
+				<Row className="container">
 					{ this.props.children }
 				</Row>
 			</div>

@@ -26,13 +26,13 @@ class TopNav extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navbar>
-					<Navbar.Header>
+				<Navbar className="nav">
+					<Navbar.Header className="name">
 						<Navbar.Brand>
-							Eugene
+							<a href="/">Eugene</a>
 						</Navbar.Brand>
 					</Navbar.Header>
-					<Nav>
+					<Nav className="links">
 						<NavItem eventKey={'about'} onSelect={this.handleLink}>About</NavItem>
 						<NavItem eventKey={'projects'} onSelect={this.handleLink}>Projects</NavItem>
 						<NavItem eventKey={'resume'} onSelect={this.handleLink}>Resume</NavItem>
