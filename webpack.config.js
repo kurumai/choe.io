@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-	entry: ['./client/main.js','./client/styles.scss'],
+	entry: ['./client/main.js','./client/styles.css'],
 	output: { path: __dirname + '/client/dist', filename: 'bundle.js' },
 	module: {
 		loaders: [
