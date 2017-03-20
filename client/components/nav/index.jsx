@@ -34,9 +34,9 @@ class TopNav extends React.Component {
 					</Navbar.Header>
 					<Nav className="links">
 						<NavItem eventKey={'about'} onSelect={this.handleLink}>About</NavItem>
-						<NavItem eventKey={'projects'} onSelect={this.handleLink}>Projects</NavItem>
-						<NavItem eventKey={'resume'} onSelect={this.handleLink}>Resume</NavItem>
-						<NavItem eventKey={'contact'} onSelect={this.handleLink}>Contact</NavItem>
+						| <NavItem eventKey={'projects'} onSelect={this.handleLink}>Projects</NavItem>
+						| <NavItem eventKey={'resume'} onSelect={this.handleLink}>Resume</NavItem>
+						| <NavItem eventKey={'contact'} onSelect={this.handleLink}>Contact</NavItem>
 					</Nav>
 				</Navbar>
 			</div>
