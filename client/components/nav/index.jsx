@@ -25,21 +25,19 @@ class TopNav extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<Navbar className="nav">
-					<Navbar.Header className="name">
-						<Navbar.Brand>
-							<a href="/">Eugene</a>
-						</Navbar.Brand>
-					</Navbar.Header>
-					<Nav className="links">
-						<NavItem eventKey={'about'} onSelect={this.handleLink}>About</NavItem>
-						| <NavItem eventKey={'projects'} onSelect={this.handleLink}>Projects</NavItem>
-						| <NavItem eventKey={'resume'} onSelect={this.handleLink}>Resume</NavItem>
-						| <NavItem eventKey={'contact'} onSelect={this.handleLink}>Contact</NavItem>
-					</Nav>
-				</Navbar>
-			</div>
+			<Navbar className="test">
+				<Navbar.Header>
+					<Navbar.Brand>
+						<a href="/">Eugene Choe</a>
+					</Navbar.Brand>
+				</Navbar.Header>
+				<Nav pullRight>
+					<NavItem eventKey={'about'} onSelect={this.handleLink}>About</NavItem>
+					<NavItem eventKey={'projects'} onSelect={this.handleLink}>Projects</NavItem>
+					<NavItem eventKey={'resume'} onSelect={this.handleLink}>Resume</NavItem>
+					<NavItem eventKey={'contact'} onSelect={this.handleLink}>Contact</NavItem>
+				</Nav>
+			</Navbar>
 		);
 	}
 };

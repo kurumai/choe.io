@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import TopNav from '../nav';
 
 
@@ -10,11 +10,9 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="application">
+				<TopNav />
 				<Row>
-					<TopNav />
-				</Row>
-				<Row className="container">
 					{ this.props.children }
 				</Row>
 			</div>
