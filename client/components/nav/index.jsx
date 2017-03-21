@@ -10,9 +10,7 @@ class TopNav extends React.Component {
 		this.state = {
 			links: {
 				'about': '/about',
-				'projects': '/projects',
-				'resume': '/resume',
-				'contact': '/contact'
+				'projects': '/projects'
 			}
 		};
 
@@ -34,8 +32,6 @@ class TopNav extends React.Component {
 				<Nav pullRight>
 					<NavItem eventKey={'about'} onSelect={this.handleLink}>About</NavItem>
 					<NavItem eventKey={'projects'} onSelect={this.handleLink}>Projects</NavItem>
-					<NavItem eventKey={'resume'} onSelect={this.handleLink}>Resume</NavItem>
-					<NavItem eventKey={'contact'} onSelect={this.handleLink}>Contact</NavItem>
 				</Nav>
 			</Navbar>
 		);

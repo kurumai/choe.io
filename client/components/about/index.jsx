@@ -7,7 +7,7 @@ class About extends React.Component {
 		super(props);
 
 		this.state = {
-			repos: {}
+			repos: []
 		}
 	}
 
@@ -20,6 +20,29 @@ class About extends React.Component {
 			console.log(data);
 			return this.setState({repos: data});
 		});
+	}
+
+	createRepoList() {
+		if (!this.state.repos) {
+			return (
+				<li>
+				Loading...
+				</li>
+			)
+		}
+		return (
+			this.state.repos.map((repo) => {
+				return (
+					<li key={repo.id}>
+						{repo.name}
+						<br/>
+						{repo.description ? repo.description : ''}
+						<br/>
+						{repo.html_url}
+					</li>
+				);
+			})
+		);
 	}
 
 	render() {
@@ -35,6 +58,9 @@ class About extends React.Component {
 				<p>
 				Let’s build something awesome together 🙌.
 				</p>
+				<ul>
+					{ this.createRepoList() }
+				</ul>
 			</div>
 		);
 	}
