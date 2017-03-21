@@ -1,6 +1,27 @@
 import React from 'react';
+import fetch from 'isomorphic-fetch';
 
 class About extends React.Component {
+
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			repos: {}
+		}
+	}
+
+	componentWillMount() {
+		fetch('https://api.github.com/users/heug/repos')
+		.then((res) => {
+			res = res.json();
+			return res;
+		}).then((data) => {
+			console.log(data);
+			return this.setState({repos: data});
+		});
+	}
+
 	render() {
 		return (
 			<div className="content">
