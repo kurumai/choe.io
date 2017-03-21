@@ -10,11 +10,11 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="application">
+			<div>
 				<TopNav />
-				<Row>
+				<div>
 					{ this.props.children }
-				</Row>
+				</div>
 			</div>
 		);
 	}

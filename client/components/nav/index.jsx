@@ -25,7 +25,7 @@ class TopNav extends React.Component {
 
 	render() {
 		return (
-			<Navbar className="test">
+			<Navbar>
 				<Navbar.Header>
 					<Navbar.Brand>
 						<a href="/">Eugene Choe</a>
