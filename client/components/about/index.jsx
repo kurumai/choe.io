@@ -1,5 +1,6 @@
 import React from 'react';
 import fetch from 'isomorphic-fetch';
+import './styles.css'
 
 class About extends React.Component {
 
@@ -22,11 +23,34 @@ class About extends React.Component {
 		});
 	}
 
+	// createRepoList() {
+	// 	if (!this.state.repos) {
+	// 		return (
+	// 			<li>
+	// 			Loading repos...
+	// 			</li>
+	// 		)
+	// 	}
+	// 	return (
+	// 		this.state.repos.map((repo) => {
+	// 			return (
+	// 				<li key={repo.id}>
+	// 					<a href={repo.html_url} target="_blank">{repo.name}</a>
+	// 					<br/>
+	// 					{repo.description ? repo.description : null}
+	// 					<br/>
+						
+	// 				</li>
+	// 			);
+	// 		})
+	// 	);
+	// }
+
 	createRepoList() {
 		if (!this.state.repos) {
 			return (
 				<li>
-				Loading...
+				Loading repos...
 				</li>
 			)
 		}
@@ -34,11 +58,9 @@ class About extends React.Component {
 			this.state.repos.map((repo) => {
 				return (
 					<li key={repo.id}>
-						{repo.name}
+						<a href={repo.html_url} target="_blank">{repo.name}</a>
 						<br/>
-						{repo.description ? repo.description : ''}
-						<br/>
-						{repo.html_url}
+						{repo.description ? repo.description : null}
 					</li>
 				);
 			})
@@ -47,7 +69,7 @@ class About extends React.Component {
 
 	render() {
 		return (
-			<div className="content">
+			<div className="about">
 				<h2>About</h2>
 				<p>
 				I hold American, Canadian, and Korean passports, but really identify myself as a citizen of the world. Born in Toronto, I spent most of my formative years in the Bay Area. Fueled by a desire to explore an unknown city and an interest with working in a quantitative field, I left for New York University and graduated with a B.S. in Finance, after which I worked on trading floors for a few years—long enough to know that I had zero interest in working in the world of finance.
