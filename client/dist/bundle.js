@@ -19992,6 +19992,10 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactBootstrap = __webpack_require__(74);
+
+__webpack_require__(517);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20010,142 +20014,71 @@ var Projects = function (_React$Component) {
 	}
 
 	_createClass(Projects, [{
-		key: "render",
+		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				"div",
-				{ "class": "block-text projects" },
+				'div',
+				null,
 				_react2.default.createElement(
-					"div",
-					{ "class": "img-box" },
+					'div',
+					{ className: 'card' },
+					_react2.default.createElement('img', { className: 'card-img', src: 'assets/mynanny/1.png', alt: 'MyNanny' }),
 					_react2.default.createElement(
-						"a",
-						{ href: "#modal-1" },
-						_react2.default.createElement("img", { src: "assets/mynanny/1.png", "class": "project-img", alt: "MyNanny" })
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ "class": "img-box" },
-					_react2.default.createElement(
-						"a",
-						{ href: "#modal-2" },
-						_react2.default.createElement("img", { src: "assets/radradio/1.png", "class": "project-img", alt: "Radradio" })
-					)
-				),
-				_react2.default.createElement("br", null),
-				_react2.default.createElement(
-					"div",
-					{ "class": "img-box" },
-					_react2.default.createElement(
-						"a",
-						{ href: "#modal-3" },
-						_react2.default.createElement("img", { src: "assets/roomly/1.png", "class": "project-img", alt: "Roomly" })
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ "class": "img-box" },
-					_react2.default.createElement(
-						"a",
-						{ href: "#modal-4" },
-						_react2.default.createElement("img", { src: "assets/giftminder/1.png", "class": "project-img", alt: "Giftminder" })
-					)
-				),
-				_react2.default.createElement("br", null),
-				_react2.default.createElement(
-					"div",
-					{ "class": "modal-dialog", id: "modal-1" },
-					_react2.default.createElement(
-						"div",
-						null,
+						'div',
+						{ className: 'card-block' },
 						_react2.default.createElement(
-							"a",
-							{ href: "#", title: "Close", "class": "close" },
-							"X"
+							'h4',
+							{ className: 'card-title' },
+							_react2.default.createElement(
+								'a',
+								{ href: '#', target: '_blank' },
+								'MyNanny'
+							)
 						),
 						_react2.default.createElement(
-							"div",
-							{ "class": "modal-title" },
-							"myNanny"
-						),
-						_react2.default.createElement("img", { src: "assets/mynanny/2.png", "class": "modal-img" }),
-						_react2.default.createElement(
-							"div",
-							{ "class": "modal-body" },
-							"Virtual assistant for managing your children\u2019s curfews and choresParents manage their children through a web portal, and children interact with their Amazon Echo to check in and receive a list of chores. Powered by Amazon Alexa and hosted on AWS Lambda and Express servers, with a front-end using React, Redux, and Bootstrap. 80% test coverage."
-						)
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ "class": "modal-dialog", id: "modal-2" },
-					_react2.default.createElement(
-						"div",
-						null,
-						_react2.default.createElement(
-							"a",
-							{ href: "#close", title: "Close", "class": "close" },
-							"X"
+							'h6',
+							{ className: 'card-subtitle' },
+							'Virtual assistant for managing your children\u2019s curfews and chores'
 						),
 						_react2.default.createElement(
-							"div",
-							{ "class": "modal-title" },
-							"Radradio"
-						),
-						_react2.default.createElement("img", { src: "assets/radradio/2.png", "class": "modal-img" }),
-						_react2.default.createElement(
-							"div",
-							{ "class": "modal-body" },
-							"Create or listen to live audio streams instantly with live messaging. Streams are archived and available for access after live streams terminate. Built with Kurento Media Server, socket.io, React, Express, Passport, and MongoDB."
-						)
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ "class": "modal-dialog", id: "modal-3" },
-					_react2.default.createElement(
-						"div",
-						null,
-						_react2.default.createElement(
-							"a",
-							{ href: "#close", title: "Close", "class": "close" },
-							"X"
-						),
-						_react2.default.createElement(
-							"div",
-							{ "class": "modal-title" },
-							"Roomly"
-						),
-						_react2.default.createElement("img", { src: "assets/roomly/2.png", "class": "modal-img" }),
-						_react2.default.createElement(
-							"div",
-							{ "class": "modal-body" },
-							"Web application to assist in finding a new roommate in your Facebook network. Built with React, Redux, Facebook OAuth, Express, MongoDB, and Webpack."
-						)
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ "class": "modal-dialog", id: "modal-4" },
-					_react2.default.createElement(
-						"div",
-						null,
-						_react2.default.createElement(
-							"a",
-							{ href: "#close", title: "Close", "class": "close" },
-							"X"
-						),
-						_react2.default.createElement(
-							"div",
-							{ "class": "modal-title" },
-							"Giftminder"
-						),
-						_react2.default.createElement("img", { src: "assets/giftminder/2.png", "class": "modal-img" }),
-						_react2.default.createElement(
-							"div",
-							{ "class": "modal-body" },
-							"A simple application to help you remind yourself of gift ideas for friends and family. Built with Angular 1, Express, and MongoDB. Stylized with Bootstrap."
+							'div',
+							{ className: 'project-description' },
+							_react2.default.createElement(
+								'span',
+								{ className: 'role' },
+								'Front End Developer'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'role' },
+								'Alexa Developer'
+							),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'React'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Redux'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Amazon Alexa'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'AWS'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Webpack'
+							)
 						)
 					)
 				)
@@ -20159,6 +20092,69 @@ var Projects = function (_React$Component) {
 ;
 
 exports.default = Projects;
+// <Grid>
+// 	<Row>
+// 		<Col md={12}>
+// 		</Col>
+// 	</Row>
+// </Grid>
+
+// <div class="block-text projects">
+// 	<div class="img-box"><a href="#modal-1"><img src="assets/mynanny/1.png" class="project-img" alt="MyNanny" /></a></div>
+// 	<div class="img-box"><a href="#modal-2"><img src="assets/radradio/1.png" class="project-img" alt="Radradio" /></a></div>
+// 	<br/>
+// 	<div class="img-box"><a href="#modal-3"><img src="assets/roomly/1.png" class="project-img" alt="Roomly" /></a></div>
+// 	<div class="img-box"><a href="#modal-4"><img src="assets/giftminder/1.png" class="project-img" alt="Giftminder" /></a></div>
+// 	<br/>
+// 	<div class="modal-dialog" id="modal-1">
+// 		<div>
+// 			<a href="#" title="Close" class="close">X</a>
+// 			<div class="modal-title">
+// 				myNanny
+// 			</div>
+// 			<img src="assets/mynanny/2.png" class="modal-img" />
+// 			<div class="modal-body">
+// 			  Virtual assistant for managing your children’s curfews and choresParents manage their children through a web portal, and children interact with their Amazon Echo to check in and receive a list of chores. Powered by Amazon Alexa and hosted on AWS Lambda and Express servers, with a front-end using React, Redux, and Bootstrap. 80% test coverage.
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<div class="modal-dialog" id="modal-2">
+// 		<div>
+// 			<a href="#close" title="Close" class="close">X</a>
+// 			<div class="modal-title">
+// 				Radradio
+// 			</div>
+// 			<img src="assets/radradio/2.png" class="modal-img" />
+// 			<div class="modal-body">
+// 				Create or listen to live audio streams instantly with live messaging. Streams are archived and available for access after live streams terminate. Built with Kurento Media Server, socket.io, React, Express, Passport, and MongoDB.
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<div class="modal-dialog" id="modal-3">
+// 		<div>
+// 			<a href="#close" title="Close" class="close">X</a>
+// 			<div class="modal-title">
+// 				Roomly
+// 			</div>
+// 			<img src="assets/roomly/2.png" class="modal-img" />
+// 			<div class="modal-body">
+// 				Web application to assist in finding a new roommate in your Facebook network. Built with React, Redux, Facebook OAuth, Express, MongoDB, and Webpack.
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<div class="modal-dialog" id="modal-4">
+// 		<div>
+// 			<a href="#close" title="Close" class="close">X</a>
+// 			<div class="modal-title">
+// 				Giftminder
+// 			</div>
+// 			<img src="assets/giftminder/2.png" class="modal-img" />
+// 			<div class="modal-body">
+// 				A simple application to help you remind yourself of gift ideas for friends and family. Built with Angular 1, Express, and MongoDB. Stylized with Bootstrap.
+// 			</div>
+// 		</div>
+// 	</div>
+// </div>
 
 /***/ }),
 /* 236 */,
@@ -21199,7 +21195,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, "body {\n\tcolor: #333333;\n\tbackground-color: #EEEEEE;\n\tline-height: 1.8;\n\tfont-family: 'noto sans', helvetica, sans-serif;\n}\n\na {\n\tcolor: #4b8cf4;\n\ttext-decoration: none;\n}\n\na:hover {\n\tcolor: #6eaef8;\n}\n\na:active {\n\tcolor: #3a7be3;\n}\n\np {\n\tmargin: 0 0 20px;\n}\n\nh2 {\n\tmargin: 0 0 15px;\n}\n\n.container {\n  max-width: 750px;\n}\n\n.img-box {\n\tdisplay: inline;\n\twidth: 320px;\n\theight: 200px;\n\tmargin: 5px;\n}\n\n.project-img {\n\twidth: 300px;\n\tmargin: auto;\n\tvertical-align: auto;\n}\n\n.project-img:hover {\n\topacity: 0.7;\n\tcursor: pointer;\n}\n\n.projects {\n\ttext-align: center;\n}\n\n.modal-img {\n\twidth: 650px;\n}\n\n.modal-dialog {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background: rgba(0,0,0,0.8);\n  z-index: 1;\n  opacity:0;\n  -webkit-transition: opacity 200ms ease-in;\n  -moz-transition: opacity 200ms ease-in;\n  transition: opacity 200ms ease-in;\n  pointer-events: none;\n}\n\n.modal-dialog:target {\n  opacity:1;\n  pointer-events: auto;\n}\n\n.modal-dialog > div {\n  width: 60%;\n  position: relative;\n  margin: 5% auto;\n  padding: 5px 20px 13px 20px;\n  border-radius: 10px;\n  background: #EEE;\n}\n\n.modal-title {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n\tpadding-bottom: 10px;\n}\n\n.modal-body {\n\tpadding-top: 10px;\n\ttext-align: left;\n\tfont-size: .9em;\n}\n\n.close {\n  background: #606061;\n  color: #FFFFFF;\n  line-height: 25px;\n  position: absolute;\n  right: -12px;\n  text-align: center;\n  top: -10px;\n  width: 24px;\n  text-decoration: none;\n  font-weight: bold;\n  -webkit-border-radius: 12px;\n  -moz-border-radius: 12px;\n  border-radius: 12px;\n  -moz-box-shadow: 1px 1px 3px #000;\n  -webkit-box-shadow: 1px 1px 3px #000;\n  box-shadow: 1px 1px 3px #000;\n}\n\n.close:hover { background: #00d9ff; }\n", ""]);
+exports.push([module.i, "body {\n\tcolor: #333333;\n\tbackground-color: #EEEEEE;\n\tline-height: 1.8;\n\tfont-family: 'noto sans', helvetica, sans-serif;\n}\n\na {\n\tcolor: #4b8cf4;\n\ttext-decoration: none;\n}\n\na:hover {\n\tcolor: #6eaef8;\n}\n\na:active {\n\tcolor: #3a7be3;\n}\n\np {\n\tmargin: 0 0 20px;\n}\n\nh2 {\n\tmargin: 0 0 15px;\n}\n\n.container {\n  max-width: 750px;\n}\n", ""]);
 
 // exports
 
@@ -46192,6 +46188,46 @@ function isReactComponent(component) {
 __webpack_require__(230);
 module.exports = __webpack_require__(146);
 
+
+/***/ }),
+/* 516 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(103)();
+// imports
+
+
+// module
+exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 5px; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 5px; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-link {\n  /*@include hover {\n    text-decoration: none;\n  }*/ }\n  .card-link + .card-link {\n    margin-left: 1.25rem; }\n\n.card > .list-group:first-child .list-group-item:first-child {\n  /*@include border-top-radius($card-border-radius);*/ }\n\n.card > .list-group:last-child .list-group-item:last-child {\n  /*@include border-bottom-radius($card-border-radius);*/ }\n\n.card-img {\n  /*// margin: -1.325rem;*/\n  /*@include border-radius($card-border-radius-inner);*/\n  width: 100%;\n  height: auto; }\n\n.card-img-overlay {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  padding: 1.25rem; }\n\n.card-img-top {\n  /*@include border-top-radius($card-border-radius-inner);*/ }\n\n.card-img-bottom {\n  /*@include border-bottom-radius($card-border-radius-inner);*/ }\n\n.project-description {\n  margin: auto;\n  text-align: center; }\n\n.role {\n  color: #FDBA62;\n  border-style: solid;\n  border-color: #FDBA62;\n  border-width: 1px;\n  font-size: 0.8em;\n  padding: 0 5 1 5;\n  margin-left: 8px; }\n\n.skill {\n  background-color: blue;\n  color: #FFF;\n  border-style: none;\n  border-radius: 5px;\n  font-size: 0.8em;\n  padding: 0 5 1 5;\n  margin-left: 8px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 517 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(516);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(145)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/lib/loader.js!./styles.scss", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/lib/loader.js!./styles.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);
