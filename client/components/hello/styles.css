@@ -1,4 +1,5 @@
 .hello {
-	width: 750px;
+	max-width: 750px;
+	padding: 0 10px 0 10px;
 	margin: auto;
 }

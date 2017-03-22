@@ -1,4 +1,15 @@
 .about {
-	width: 750px;
+	max-width: 750px;
+	padding: 0 10px 0 10px;
 	margin: auto;
+}
+
+.card {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
+}
+
+.card-block {
+	padding: 0 5px 0 5px;
 }
