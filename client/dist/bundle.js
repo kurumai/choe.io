@@ -19670,7 +19670,7 @@ var About = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				{ className: 'about' },
+				null,
 				_react2.default.createElement(
 					_reactBootstrap.Grid,
 					null,
@@ -19679,7 +19679,7 @@ var About = function (_React$Component) {
 						null,
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 8, sm: 8, md: 8, lg: 8 },
+							{ xs: 8, sm: 8, md: 9, lg: 9 },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -19703,7 +19703,7 @@ var About = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 4, sm: 4, md: 4, lg: 4 },
+							{ xs: 4, sm: 4, md: 3, lg: 3 },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -19773,7 +19773,7 @@ var App = function (_Component) {
 				_react2.default.createElement(_nav2.default, null),
 				_react2.default.createElement(
 					'div',
-					null,
+					{ className: 'app' },
 					this.props.children
 				)
 			);
@@ -19828,7 +19828,7 @@ var Hello = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				{ className: 'hello' },
+				null,
 				_react2.default.createElement(
 					_reactBootstrap.Jumbotron,
 					null,
@@ -20161,64 +20161,7 @@ var Projects = function (_React$Component) {
 exports.default = Projects;
 
 /***/ }),
-/* 236 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Resume = function (_React$Component) {
-	_inherits(Resume, _React$Component);
-
-	function Resume() {
-		_classCallCheck(this, Resume);
-
-		return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).apply(this, arguments));
-	}
-
-	_createClass(Resume, [{
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(
-				"div",
-				{ "class": "block-text resume" },
-				_react2.default.createElement(
-					"a",
-					{ href: "https://goo.gl/99TfvG", "class": "button resume-btn" },
-					"Download PDF Resume"
-				),
-				_react2.default.createElement("br", null),
-				_react2.default.createElement("iframe", { src: "https://docs.google.com/document/d/1PfGjbEM0O8xz-dhwYrK_f8OUdl1KxfnRR2_QICrC0vg/pub?embedded=true", frameborder: "0" })
-			);
-		}
-	}]);
-
-	return Resume;
-}(_react2.default.Component);
-
-;
-
-exports.default = Resume;
-
-/***/ }),
+/* 236 */,
 /* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20251,10 +20194,6 @@ var _about = __webpack_require__(231);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _resume = __webpack_require__(236);
-
-var _resume2 = _interopRequireDefault(_resume);
-
 var _projects = __webpack_require__(235);
 
 var _projects2 = _interopRequireDefault(_projects);
@@ -20270,7 +20209,6 @@ var Routes = function Routes(props) {
 			{ path: '/', component: _app2.default },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _hello2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'resume', component: _resume2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'projects', component: _projects2.default })
 		)
 	);
@@ -21247,7 +21185,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, ".hello {\n\tmax-width: 750px;\n\tpadding: 0 10px 0 10px;\n\tmargin: auto;\n}\n", ""]);
+exports.push([module.i, ".app {\n\tmax-width: 750px;\n\tpadding: 0 10px 0 10px;\n\tmargin: auto;\n}", ""]);
 
 // exports
 
@@ -21261,7 +21199,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, "body {\n\tcolor: #333333;\n\tbackground-color: #EEEEEE;\n\tline-height: 1.8;\n\tfont-family: 'noto sans', helvetica, sans-serif;\n}\n\na {\n\tcolor: #4b8cf4;\n\ttext-decoration: none;\n}\n\na:hover {\n\tcolor: #6eaef8;\n}\n\na:active {\n\tcolor: #3a7be3;\n}\n\np {\n\tmargin: 0 0 20px;\n}\n\nh2 {\n\tmargin: 0 0 15px;\n}\n\n.resume-btn {\n\tpadding: 8px 16px;\n}\n\n.img-box {\n\tdisplay: inline;\n\twidth: 320px;\n\theight: 200px;\n\tmargin: 5px;\n}\n\n.project-img {\n\twidth: 300px;\n\tmargin: auto;\n\tvertical-align: auto;\n}\n\n.project-img:hover {\n\topacity: 0.7;\n\tcursor: pointer;\n}\n\n.projects {\n\ttext-align: center;\n}\n\n.modal-img {\n\twidth: 650px;\n}\n\n.modal-dialog {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background: rgba(0,0,0,0.8);\n  z-index: 1;\n  opacity:0;\n  -webkit-transition: opacity 200ms ease-in;\n  -moz-transition: opacity 200ms ease-in;\n  transition: opacity 200ms ease-in;\n  pointer-events: none;\n}\n\n.modal-dialog:target {\n  opacity:1;\n  pointer-events: auto;\n}\n\n.modal-dialog > div {\n  width: 60%;\n  position: relative;\n  margin: 5% auto;\n  padding: 5px 20px 13px 20px;\n  border-radius: 10px;\n  background: #EEE;\n}\n\n.modal-title {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n\tpadding-bottom: 10px;\n}\n\n.modal-body {\n\tpadding-top: 10px;\n\ttext-align: left;\n\tfont-size: .9em;\n}\n\n.close {\n  background: #606061;\n  color: #FFFFFF;\n  line-height: 25px;\n  position: absolute;\n  right: -12px;\n  text-align: center;\n  top: -10px;\n  width: 24px;\n  text-decoration: none;\n  font-weight: bold;\n  -webkit-border-radius: 12px;\n  -moz-border-radius: 12px;\n  border-radius: 12px;\n  -moz-box-shadow: 1px 1px 3px #000;\n  -webkit-box-shadow: 1px 1px 3px #000;\n  box-shadow: 1px 1px 3px #000;\n}\n\n.close:hover { background: #00d9ff; }\n", ""]);
+exports.push([module.i, "body {\n\tcolor: #333333;\n\tbackground-color: #EEEEEE;\n\tline-height: 1.8;\n\tfont-family: 'noto sans', helvetica, sans-serif;\n}\n\na {\n\tcolor: #4b8cf4;\n\ttext-decoration: none;\n}\n\na:hover {\n\tcolor: #6eaef8;\n}\n\na:active {\n\tcolor: #3a7be3;\n}\n\np {\n\tmargin: 0 0 20px;\n}\n\nh2 {\n\tmargin: 0 0 15px;\n}\n\n.container {\n  max-width: 750px;\n}\n\n.img-box {\n\tdisplay: inline;\n\twidth: 320px;\n\theight: 200px;\n\tmargin: 5px;\n}\n\n.project-img {\n\twidth: 300px;\n\tmargin: auto;\n\tvertical-align: auto;\n}\n\n.project-img:hover {\n\topacity: 0.7;\n\tcursor: pointer;\n}\n\n.projects {\n\ttext-align: center;\n}\n\n.modal-img {\n\twidth: 650px;\n}\n\n.modal-dialog {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background: rgba(0,0,0,0.8);\n  z-index: 1;\n  opacity:0;\n  -webkit-transition: opacity 200ms ease-in;\n  -moz-transition: opacity 200ms ease-in;\n  transition: opacity 200ms ease-in;\n  pointer-events: none;\n}\n\n.modal-dialog:target {\n  opacity:1;\n  pointer-events: auto;\n}\n\n.modal-dialog > div {\n  width: 60%;\n  position: relative;\n  margin: 5% auto;\n  padding: 5px 20px 13px 20px;\n  border-radius: 10px;\n  background: #EEE;\n}\n\n.modal-title {\n\tfont-size: 1.2em;\n\tfont-weight: bold;\n\tpadding-bottom: 10px;\n}\n\n.modal-body {\n\tpadding-top: 10px;\n\ttext-align: left;\n\tfont-size: .9em;\n}\n\n.close {\n  background: #606061;\n  color: #FFFFFF;\n  line-height: 25px;\n  position: absolute;\n  right: -12px;\n  text-align: center;\n  top: -10px;\n  width: 24px;\n  text-decoration: none;\n  font-weight: bold;\n  -webkit-border-radius: 12px;\n  -moz-border-radius: 12px;\n  border-radius: 12px;\n  -moz-box-shadow: 1px 1px 3px #000;\n  -webkit-box-shadow: 1px 1px 3px #000;\n  box-shadow: 1px 1px 3px #000;\n}\n\n.close:hover { background: #00d9ff; }\n", ""]);
 
 // exports
 
@@ -21275,7 +21213,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, ".about {\n  max-width: 750px;\n  padding: 0 10px 0 10px;\n  margin: auto; }\n\n.card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 5px; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 0; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-link {\n  /*@include hover {\n    text-decoration: none;\n  }*/ }\n  .card-link + .card-link {\n    margin-left: 1.25rem; }\n\n.card > .list-group:first-child .list-group-item:first-child {\n  /*@include border-top-radius($card-border-radius);*/ }\n\n.card > .list-group:last-child .list-group-item:last-child {\n  /*@include border-bottom-radius($card-border-radius);*/ }\n", ""]);
+exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 5px; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 0; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-link {\n  /*@include hover {\n    text-decoration: none;\n  }*/ }\n  .card-link + .card-link {\n    margin-left: 1.25rem; }\n\n.card > .list-group:first-child .list-group-item:first-child {\n  /*@include border-top-radius($card-border-radius);*/ }\n\n.card > .list-group:last-child .list-group-item:last-child {\n  /*@include border-bottom-radius($card-border-radius);*/ }\n", ""]);
 
 // exports
 
