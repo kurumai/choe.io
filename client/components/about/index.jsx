@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import fetch from 'isomorphic-fetch';
-import './styles.css'
+import './styles.scss';
 
 class About extends React.Component {
 
@@ -19,6 +19,17 @@ class About extends React.Component {
 			res = res.json();
 			return res;
 		}).then((data) => {
+			console.log(data[0].updated_at, data[1].updated_at, data[2].updated_at);
+			data.sort((a,b) => { 
+				if (a.updated_at > b.updated_at) {
+					return -1;
+				}
+				if (a.updated_at < b.updated_at) {
+					return 1;
+				}
+				return 0;
+			});
+			console.log(data[0].updated_at, data[1].updated_at, data[2].updated_at);
 			return this.setState({repos: data});
 		});
 	}
@@ -37,7 +48,7 @@ class About extends React.Component {
 					<div className="card" key={repo.id}>
 						<div className="card-block">
 							<h4 className="card-title"><a href={repo.html_url} target="_blank">{repo.name}</a></h4>
-							<p className="card-text">{repo.description ? repo.description : null}</p>
+							<p className="card-text">{repo.description ? repo.description : ''}</p>
 						</div>
 					</div>
 				);
