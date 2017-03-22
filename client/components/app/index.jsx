@@ -12,7 +12,7 @@ class App extends Component {
 		return (
 			<div>
 				<TopNav />
-				<div>
+				<div className="app">
 					{ this.props.children }
 				</div>
 			</div>

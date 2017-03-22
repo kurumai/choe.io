@@ -5,7 +5,7 @@ import './styles.css';
 class Hello extends React.Component {
 	render() {
 		return (
-			<div className="hello">
+			<div>
 				<Jumbotron>	
 					<h2>
 					Hello, friend.
