@@ -19696,12 +19696,12 @@ var About = function (_React$Component) {
 							_react2.default.createElement(
 								'p',
 								null,
-								'I hold American, Canadian, and Korean passports, but really identify myself as a citizen of the world. Born in Toronto, I spent most of my formative years in the Bay Area. Fueled by a desire to explore an unknown city and an interest with working in a quantitative field, I left for New York University and graduated with a B.S. in Finance, after which I worked on trading floors for a few years\u2014long enough to know that I had zero interest in working in the world of finance.'
+								'I\'m passionate about building scalable, maintainable, and well-tested applications with a focus on usability for non-technical people. Although relatively new to software engineering as a full-time vocation, I\'ve been programming for over 15 years.'
 							),
 							_react2.default.createElement(
 								'p',
 								null,
-								'I started writing macros in VBA, which then turned into learning SQL and some Python as I got more comfortable with coding while working as a data analyst, and even as a chef (another story for another time). Along the way, I\u2019ve discovered a passion for building applications that I\u2019m unable to shake. I love what I do and am looking forward to all the cool things that I\'ll inevitably be a part of.'
+								'After getting my start with HTML and CSS in high school, I graduated to VBA and SQL after Excel wasn\'t cutting it anymore when doing data analysis. I eventually started picking up Python as my needs grew, and I even started teaching myself JavaScript during my time as a chef. Along the way, I\u2019ve discovered a passion for building applications that I\u2019m unable to shake.'
 							),
 							_react2.default.createElement(
 								'p',
@@ -19889,6 +19889,12 @@ var Hello = function (_React$Component) {
 										'a',
 										{ href: 'https://www.instagram.com/generalchoe', target: '_blank' },
 										'Instagram'
+									),
+									'. Or just shoot me an ',
+									_react2.default.createElement(
+										'a',
+										{ href: 'mailto:eugene.choe+choe.io@gmail.com' },
+										'e-mail'
 									),
 									'.'
 								)

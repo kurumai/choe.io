@@ -23,7 +23,7 @@ class Hello extends React.Component {
 								I’m Eugene, and I build full-stack web applications. 
 								</p>
 								<p>
-								You can find out more about me on <a href="https://github.com/heug" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/eugene-choe" target="_blank">LinkedIn</a>, and <a href="https://www.instagram.com/generalchoe" target="_blank">Instagram</a>.
+								You can find out more about me on <a href="https://github.com/heug" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/eugene-choe" target="_blank">LinkedIn</a>, and <a href="https://www.instagram.com/generalchoe" target="_blank">Instagram</a>. Or just shoot me an <a href="mailto:eugene.choe+choe.io@gmail.com">e-mail</a>.
 								</p>
 							</Jumbotron>
 						</Col>
