@@ -19686,7 +19686,7 @@ var About = function (_React$Component) {
 						null,
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 8, sm: 8, md: 9, lg: 8 },
+							{ xs: 12, sm: 8, md: 9, lg: 8 },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -19710,7 +19710,7 @@ var About = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 4, sm: 4, md: 3, lg: 4 },
+							{ xs: 12, sm: 4, md: 3, lg: 4 },
 							_react2.default.createElement(
 								'h2',
 								null,
