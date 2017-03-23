@@ -1,0 +1,35 @@
+html {
+	height: 101%;
+}
+
+body {
+	color: #333333;
+	background-color: #EEEEEE;
+	line-height: 1.8;
+	font-family: 'noto sans', helvetica, sans-serif;
+}
+
+a {
+	color: #4b8cf4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #6eaef8;
+}
+
+a:active {
+	color: #3a7be3;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+h2 {
+	margin: 0 0 15px;
+}
+
+.container {
+  max-width: 750px;
+}

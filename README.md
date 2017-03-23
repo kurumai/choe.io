@@ -1,1 +1,1 @@
-# choe.io
+# React / Express / Boilerplate
