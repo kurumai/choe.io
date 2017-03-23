@@ -23,14 +23,16 @@ class About extends React.Component {
 		// 		return b.updated_at.localeCompare(a.updated_at);
 		// 	});
 		// 	return this.setState({repos: data});
+		// }).catch((err) => {
+		// 	return console.error('unable to fetch repos from github!');
 		// });
 	}
 
 	createRepoList() {
-		if (!this.state.repos) {
+		if (!this.state.repos.length) {
 			return (
 				<div>
-				Loading repos...
+					Loading <a href="https://github.com/heug" target="_blank">repos</a>...
 				</div>
 			)
 		}
@@ -53,7 +55,7 @@ class About extends React.Component {
 			<div>
 				<Grid>
 					<Row>
-						<Col xs={8} sm={8} md={9} lg={9}>
+						<Col xs={8} sm={8} md={9} lg={8}>
 							<h2>About</h2>
 							<p>
 							I hold American, Canadian, and Korean passports, but really identify myself as a citizen of the world. Born in Toronto, I spent most of my formative years in the Bay Area. Fueled by a desire to explore an unknown city and an interest with working in a quantitative field, I left for New York University and graduated with a B.S. in Finance, after which I worked on trading floors for a few years—long enough to know that I had zero interest in working in the world of finance.
@@ -65,7 +67,7 @@ class About extends React.Component {
 							Let’s build something awesome together 🙌.
 							</p>
 						</Col>
-						<Col xs={4} sm={4} md={3} lg={3}>
+						<Col xs={4} sm={4} md={3} lg={4}>
 							<h2>Github Repos</h2>
 							{ this.createRepoList() }
 						</Col>

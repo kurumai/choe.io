@@ -19627,16 +19627,24 @@ var About = function (_React$Component) {
 			// 		return b.updated_at.localeCompare(a.updated_at);
 			// 	});
 			// 	return this.setState({repos: data});
+			// }).catch((err) => {
+			// 	return console.error('unable to fetch repos from github!');
 			// });
 		}
 	}, {
 		key: 'createRepoList',
 		value: function createRepoList() {
-			if (!this.state.repos) {
+			if (!this.state.repos.length) {
 				return _react2.default.createElement(
 					'div',
 					null,
-					'Loading repos...'
+					'Loading ',
+					_react2.default.createElement(
+						'a',
+						{ href: 'https://github.com/heug', target: '_blank' },
+						'repos'
+					),
+					'...'
 				);
 			}
 			return this.state.repos.map(function (repo) {
@@ -19678,7 +19686,7 @@ var About = function (_React$Component) {
 						null,
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 8, sm: 8, md: 9, lg: 9 },
+							{ xs: 8, sm: 8, md: 9, lg: 8 },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -19702,7 +19710,7 @@ var About = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 4, sm: 4, md: 3, lg: 3 },
+							{ xs: 4, sm: 4, md: 3, lg: 4 },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -19829,41 +19837,58 @@ var Hello = function (_React$Component) {
 				'div',
 				null,
 				_react2.default.createElement(
-					_reactBootstrap.Jumbotron,
+					_reactBootstrap.Grid,
 					null,
 					_react2.default.createElement(
-						'h2',
+						_reactBootstrap.Row,
 						null,
-						'Hello, friend.'
-					),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement(
-						'p',
-						null,
-						'I\u2019m Eugene, and I build full-stack web applications.'
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						'You can find out more about me on ',
 						_react2.default.createElement(
-							'a',
-							{ href: 'https://github.com/heug' },
-							'GitHub'
+							_reactBootstrap.Col,
+							{ xs: 4, sm: 4, md: 4, lg: 4 },
+							_react2.default.createElement('img', { src: 'assets/splash-profile.jpg', className: 'splash-img' })
 						),
-						', ',
 						_react2.default.createElement(
-							'a',
-							{ href: 'https://www.linkedin.com/in/eugene-choe' },
-							'LinkedIn'
-						),
-						', and ',
-						_react2.default.createElement(
-							'a',
-							{ href: 'https://www.instagram.com/generalchoe' },
-							'Instagram'
-						),
-						'.'
+							_reactBootstrap.Col,
+							{ xs: 8, sm: 8, md: 8, lg: 8 },
+							_react2.default.createElement(
+								_reactBootstrap.Jumbotron,
+								null,
+								_react2.default.createElement(
+									'h2',
+									null,
+									'Hello, friend.'
+								),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement(
+									'p',
+									null,
+									'I\u2019m Eugene, and I build full-stack web applications.'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'You can find out more about me on ',
+									_react2.default.createElement(
+										'a',
+										{ href: 'https://github.com/heug', target: '_blank' },
+										'GitHub'
+									),
+									', ',
+									_react2.default.createElement(
+										'a',
+										{ href: 'https://www.linkedin.com/in/eugene-choe', target: '_blank' },
+										'LinkedIn'
+									),
+									', and ',
+									_react2.default.createElement(
+										'a',
+										{ href: 'https://www.instagram.com/generalchoe', target: '_blank' },
+										'Instagram'
+									),
+									'.'
+								)
+							)
+						)
 					)
 				)
 			);
@@ -21304,7 +21329,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, ".app {\n\tmax-width: 750px;\n\tpadding: 0 10px 0 10px;\n\tmargin: auto;\n}", ""]);
+exports.push([module.i, ".app {\n\tmax-width: 750px;\n\tpadding: 0 10px 0 10px;\n\tmargin: auto;\n}\n\n.splash-img {\n\tmax-width: 100%;\n\theight: auto;\n\t/*display: block;*/\n\t/*margin: auto;*/\n\tborder-radius: 10px;\n}", ""]);
 
 // exports
 

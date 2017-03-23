@@ -3,3 +3,11 @@
 	padding: 0 10px 0 10px;
 	margin: auto;
 }
+
+.splash-img {
+	max-width: 100%;
+	height: auto;
+	/*display: block;*/
+	/*margin: auto;*/
+	border-radius: 10px;
+}
