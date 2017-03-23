@@ -1,37 +1,11 @@
 import React from 'react';
 import { Grid, Row, Col, Jumbotron } from 'react-bootstrap';
-import './styles.css';
-
-// class Hello extends React.Component {
-// 	render() {
-// 		return (
-// 			<div className="intro-container">
-// 				<div>
-// 					<img src="assets/splash-profile.jpg" className="splash-img"/>
-// 				</div>
-// 				<div>
-// 					<Jumbotron>	
-// 						<h2>
-// 						Hello, friend.
-// 						</h2>
-// 						<br/>
-// 						<p>
-// 						I’m Eugene, and I build full-stack web applications. 
-// 						</p>
-// 						<p>
-// 						You can find out more about me on <a href="https://github.com/heug" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/eugene-choe" target="_blank">LinkedIn</a>, and <a href="https://www.instagram.com/generalchoe" target="_blank">Instagram</a>.
-// 						</p>
-// 					</Jumbotron>
-// 				</div>
-// 			</div>
-// 		);
-// 	}
-// };
+import './styles.scss';
 
 class Hello extends React.Component {
 	render() {
 		return (
-			<div className="hello">
+			<div>
 				<Grid>
 					<Row>
 						<Col xs={12} sm={4} md={4} lg={4}>

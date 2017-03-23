@@ -6,12 +6,12 @@ class Projects extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="card">
-					<img className="card-img" src="assets/mynanny/2.png" alt="MyNanny" />
-					<div className="card-block">
-						<h4 className="card-title"><a href="https://my-nanny.org" target="_blank">MyNanny</a></h4>
-						<h6 className="card-subtitle">Virtual assistant for managing your children’s curfews and chores</h6>
-						<div className="card-text">
+				<div className="proj-card">
+					<img className="proj-card-img" src="assets/mynanny/2.png" alt="MyNanny" />
+					<div className="proj-card-block">
+						<h4 className="proj-card-title"><a href="https://my-nanny.org" target="_blank">MyNanny</a></h4>
+						<h6 className="proj-card-subtitle">Virtual assistant for managing your children’s curfews and chores</h6>
+						<div className="proj-card-text">
 							<span className="job role">Front End Developer</span>
 							<span className="job role">Alexa Developer</span>
 							<div className="spacer"></div>
@@ -25,12 +25,12 @@ class Projects extends React.Component {
 						</div>
 					</div>
 				</div>
-				<div className="card">
-					<img className="card-img" src="assets/radradio/2.png" alt="RadRadio" />
-					<div className="card-block">
-						<h4 className="card-title">RadRadio</h4>
-						<h6 className="card-subtitle">Create or listen to live audio streams instantly with live messaging</h6>
-						<div className="card-text">
+				<div className="proj-card">
+					<img className="proj-card-img" src="assets/radradio/2.png" alt="RadRadio" />
+					<div className="proj-card-block">
+						<h4 className="proj-card-title">RadRadio</h4>
+						<h6 className="proj-card-subtitle">Create or listen to live audio streams instantly with live messaging</h6>
+						<div className="proj-card-text">
 							<span className="job role">Back End Developer</span>
 							<span className="job role">DB Administrator</span>
 							<div className="spacer"></div>
@@ -44,12 +44,12 @@ class Projects extends React.Component {
 						</div>
 					</div>
 				</div>
-				<div className="card">
-					<img className="card-img" src="assets/roomly/2.png" alt="Roomly" />
-					<div className="card-block">
-						<h4 className="card-title">Roomly</h4>
-						<h6 className="card-subtitle">Web application to find you a new roommate in your Facebook network</h6>
-						<div className="card-text">
+				<div className="proj-card">
+					<img className="proj-card-img" src="assets/roomly/2.png" alt="Roomly" />
+					<div className="proj-card-block">
+						<h4 className="proj-card-title">Roomly</h4>
+						<h6 className="proj-card-subtitle">Web application to find you a new roommate in your Facebook network</h6>
+						<div className="proj-card-text">
 							<span className="job role">Front End Developer</span>
 							<span className="job role">Back End Developer</span>
 							<div className="spacer"></div>
@@ -61,12 +61,12 @@ class Projects extends React.Component {
 						</div>
 					</div>
 				</div>
-				<div className="card">
-					<img className="card-img" src="assets/giftminder/1.png" alt="Giftminder" />
-					<div className="card-block">
-						<h4 className="card-title">Giftminder</h4>
-						<h6 className="card-subtitle">A web application to help you remember gift ideas for friends and family</h6>
-						<div className="card-text">
+				<div className="proj-card">
+					<img className="proj-card-img" src="assets/giftminder/1.png" alt="Giftminder" />
+					<div className="proj-card-block">
+						<h4 className="proj-card-title">Giftminder</h4>
+						<h6 className="proj-card-subtitle">A web application to help you remember gift ideas for friends and family</h6>
+						<div className="proj-card-text">
 							<span className="job role">Front End Developer</span>
 							<div className="spacer"></div>
 							<span className="job skill">Angular</span>

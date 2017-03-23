@@ -79,27 +79,3 @@ $card-columns-margin:       $card-spacer-y !default;
 .card-text:last-child {
   margin-bottom: 0;
 }
-
-.card-link {
-  /*@include hover {
-    text-decoration: none;
-  }*/
-
-  + .card-link {
-    margin-left: $card-spacer-x;
-  }
-}
-
-.card {
-  > .list-group:first-child {
-    .list-group-item:first-child {
-      /*@include border-top-radius($card-border-radius);*/
-    }
-  }
-
-  > .list-group:last-child {
-    .list-group-item:last-child {
-      /*@include border-bottom-radius($card-border-radius);*/
-    }
-  }
-}

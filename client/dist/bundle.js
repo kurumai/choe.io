@@ -19618,18 +19618,19 @@ var About = function (_React$Component) {
 	_createClass(About, [{
 		key: 'componentWillMount',
 		value: function componentWillMount() {
-			// fetch('https://api.github.com/users/heug/repos')
-			// .then((res) => {
-			// 	res = res.json();
-			// 	return res;
-			// }).then((data) => {
-			// 	data.sort((a,b) => { 
-			// 		return b.updated_at.localeCompare(a.updated_at);
-			// 	});
-			// 	return this.setState({repos: data});
-			// }).catch((err) => {
-			// 	return console.error('unable to fetch repos from github!');
-			// });
+			var _this2 = this;
+
+			(0, _isomorphicFetch2.default)('https://api.github.com/users/heug/repos').then(function (res) {
+				res = res.json();
+				return res;
+			}).then(function (data) {
+				data.sort(function (a, b) {
+					return b.updated_at.localeCompare(a.updated_at);
+				});
+				return _this2.setState({ repos: data });
+			}).catch(function (err) {
+				return console.error('unable to fetch repos from github!');
+			});
 		}
 	}, {
 		key: 'createRepoList',
@@ -19686,7 +19687,7 @@ var About = function (_React$Component) {
 						null,
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 12, sm: 8, md: 9, lg: 8 },
+							{ xs: 12, sm: 12, md: 8, lg: 8 },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -19710,7 +19711,7 @@ var About = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 12, sm: 4, md: 3, lg: 4 },
+							{ xs: 12, sm: 8, md: 4, lg: 4 },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -19811,7 +19812,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(74);
 
-__webpack_require__(510);
+__webpack_require__(521);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19820,32 +19821,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// class Hello extends React.Component {
-// 	render() {
-// 		return (
-// 			<div className="intro-container">
-// 				<div>
-// 					<img src="assets/splash-profile.jpg" className="splash-img"/>
-// 				</div>
-// 				<div>
-// 					<Jumbotron>	
-// 						<h2>
-// 						Hello, friend.
-// 						</h2>
-// 						<br/>
-// 						<p>
-// 						I’m Eugene, and I build full-stack web applications. 
-// 						</p>
-// 						<p>
-// 						You can find out more about me on <a href="https://github.com/heug" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/eugene-choe" target="_blank">LinkedIn</a>, and <a href="https://www.instagram.com/generalchoe" target="_blank">Instagram</a>.
-// 						</p>
-// 					</Jumbotron>
-// 				</div>
-// 			</div>
-// 		);
-// 	}
-// };
 
 var Hello = function (_React$Component) {
 	_inherits(Hello, _React$Component);
@@ -19861,7 +19836,7 @@ var Hello = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				{ className: 'hello' },
+				null,
 				_react2.default.createElement(
 					_reactBootstrap.Grid,
 					null,
@@ -19952,6 +19927,8 @@ var _react2 = _interopRequireDefault(_react);
 var _reactRouter = __webpack_require__(139);
 
 var _reactBootstrap = __webpack_require__(74);
+
+__webpack_require__(519);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20075,14 +20052,14 @@ var Projects = function (_React$Component) {
 				null,
 				_react2.default.createElement(
 					'div',
-					{ className: 'card' },
-					_react2.default.createElement('img', { className: 'card-img', src: 'assets/mynanny/2.png', alt: 'MyNanny' }),
+					{ className: 'proj-card' },
+					_react2.default.createElement('img', { className: 'proj-card-img', src: 'assets/mynanny/2.png', alt: 'MyNanny' }),
 					_react2.default.createElement(
 						'div',
-						{ className: 'card-block' },
+						{ className: 'proj-card-block' },
 						_react2.default.createElement(
 							'h4',
-							{ className: 'card-title' },
+							{ className: 'proj-card-title' },
 							_react2.default.createElement(
 								'a',
 								{ href: 'https://my-nanny.org', target: '_blank' },
@@ -20091,12 +20068,12 @@ var Projects = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							'h6',
-							{ className: 'card-subtitle' },
+							{ className: 'proj-card-subtitle' },
 							'Virtual assistant for managing your children\u2019s curfews and chores'
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'card-text' },
+							{ className: 'proj-card-text' },
 							_react2.default.createElement(
 								'span',
 								{ className: 'job role' },
@@ -20148,24 +20125,24 @@ var Projects = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: 'card' },
-					_react2.default.createElement('img', { className: 'card-img', src: 'assets/radradio/2.png', alt: 'RadRadio' }),
+					{ className: 'proj-card' },
+					_react2.default.createElement('img', { className: 'proj-card-img', src: 'assets/radradio/2.png', alt: 'RadRadio' }),
 					_react2.default.createElement(
 						'div',
-						{ className: 'card-block' },
+						{ className: 'proj-card-block' },
 						_react2.default.createElement(
 							'h4',
-							{ className: 'card-title' },
+							{ className: 'proj-card-title' },
 							'RadRadio'
 						),
 						_react2.default.createElement(
 							'h6',
-							{ className: 'card-subtitle' },
+							{ className: 'proj-card-subtitle' },
 							'Create or listen to live audio streams instantly with live messaging'
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'card-text' },
+							{ className: 'proj-card-text' },
 							_react2.default.createElement(
 								'span',
 								{ className: 'job role' },
@@ -20217,24 +20194,24 @@ var Projects = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: 'card' },
-					_react2.default.createElement('img', { className: 'card-img', src: 'assets/roomly/2.png', alt: 'Roomly' }),
+					{ className: 'proj-card' },
+					_react2.default.createElement('img', { className: 'proj-card-img', src: 'assets/roomly/2.png', alt: 'Roomly' }),
 					_react2.default.createElement(
 						'div',
-						{ className: 'card-block' },
+						{ className: 'proj-card-block' },
 						_react2.default.createElement(
 							'h4',
-							{ className: 'card-title' },
+							{ className: 'proj-card-title' },
 							'Roomly'
 						),
 						_react2.default.createElement(
 							'h6',
-							{ className: 'card-subtitle' },
+							{ className: 'proj-card-subtitle' },
 							'Web application to find you a new roommate in your Facebook network'
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'card-text' },
+							{ className: 'proj-card-text' },
 							_react2.default.createElement(
 								'span',
 								{ className: 'job role' },
@@ -20276,24 +20253,24 @@ var Projects = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: 'card' },
-					_react2.default.createElement('img', { className: 'card-img', src: 'assets/giftminder/1.png', alt: 'Giftminder' }),
+					{ className: 'proj-card' },
+					_react2.default.createElement('img', { className: 'proj-card-img', src: 'assets/giftminder/1.png', alt: 'Giftminder' }),
 					_react2.default.createElement(
 						'div',
-						{ className: 'card-block' },
+						{ className: 'proj-card-block' },
 						_react2.default.createElement(
 							'h4',
-							{ className: 'card-title' },
+							{ className: 'proj-card-title' },
 							'Giftminder'
 						),
 						_react2.default.createElement(
 							'h6',
-							{ className: 'card-subtitle' },
+							{ className: 'proj-card-subtitle' },
 							'A web application to help you remember gift ideas for friends and family'
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'card-text' },
+							{ className: 'proj-card-text' },
 							_react2.default.createElement(
 								'span',
 								{ className: 'job role' },
@@ -21351,20 +21328,7 @@ for(var collections = ['NodeList', 'DOMTokenList', 'MediaList', 'StyleSheetList'
 }
 
 /***/ }),
-/* 286 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(103)();
-// imports
-
-
-// module
-exports.push([module.i, ".app {\n\tmax-width: 750px;\n\tpadding: 0 10px 0 10px;\n\tmargin: auto;\n}\n\n.hello {\n\tmargin: auto;\n}\n\n.splash-img {\n\tmax-width: 100%;\n\theight: auto;\n\tdisplay: block;\n\tborder-radius: 10px;\n}\n\n.vertical-center {\n\tposition: relative;\n\ttop: 50%;\n\ttransform: translateY(50%);\n}", ""]);
-
-// exports
-
-
-/***/ }),
+/* 286 */,
 /* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21387,7 +21351,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 5px; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 0; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-link {\n  /*@include hover {\n    text-decoration: none;\n  }*/ }\n  .card-link + .card-link {\n    margin-left: 1.25rem; }\n\n.card > .list-group:first-child .list-group-item:first-child {\n  /*@include border-top-radius($card-border-radius);*/ }\n\n.card > .list-group:last-child .list-group-item:last-child {\n  /*@include border-bottom-radius($card-border-radius);*/ }\n", ""]);
+exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 5px; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 0; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n", ""]);
 
 // exports
 
@@ -45551,32 +45515,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 510 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(286);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(145)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!./../../../node_modules/css-loader/index.js!./styles.css", function() {
-			var newContent = require("!!./../../../node_modules/css-loader/index.js!./styles.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
+/* 510 */,
 /* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -46376,7 +46315,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 15px;\n  margin-left: auto;\n  margin-right: auto;\n  width: 90%; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem;\n  font-weight: bold; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 5px; }\n\n.card-text {\n  padding-top: 6px;\n  padding-left: -8px;\n  text-align: center; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-img {\n  /*// margin: -1.325rem;*/\n  /*@include border-radius($card-border-radius-inner);*/\n  width: 100%;\n  height: auto;\n  margin-bottom: -10px; }\n\n.card-img-top {\n  /*@include border-top-radius($card-border-radius-inner);*/ }\n\n.card-img-bottom {\n  /*@include border-bottom-radius($card-border-radius-inner);*/ }\n\n.spacer {\n  padding: 2px 0; }\n\n.job {\n  display: inline-block;\n  padding: 0 5 1 5;\n  margin-left: 8px;\n  font-size: 0.8em; }\n\n.role {\n  color: #42a4f4;\n  border-style: solid;\n  border-color: #42a4f4;\n  border-width: 1px; }\n\n.skill {\n  background-color: #e29c3f;\n  color: #FFF;\n  border-style: none;\n  border-radius: 5px;\n  margin-bottom: 4px; }\n", ""]);
+exports.push([module.i, ".proj-card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 15px;\n  margin-left: auto;\n  margin-right: auto;\n  width: 90%; }\n\n.proj-card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.proj-card-title {\n  margin-bottom: 0.75rem;\n  font-weight: bold; }\n\n.proj-card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 5px; }\n\n.proj-card-text {\n  padding-top: 6px;\n  padding-left: -8px;\n  text-align: center; }\n\n.proj-card-text:last-child {\n  margin-bottom: 0; }\n\n.proj-card-img {\n  /*// margin: -1.325rem;*/\n  /*@include border-radius($card-border-radius-inner);*/\n  width: 100%;\n  height: auto;\n  margin-bottom: -10px; }\n\n.proj-card-img-top {\n  /*@include border-top-radius($card-border-radius-inner);*/ }\n\n.proj-card-img-bottom {\n  /*@include border-bottom-radius($card-border-radius-inner);*/ }\n\n.spacer {\n  padding: 2px 0; }\n\n.job {\n  display: inline-block;\n  padding: 0 5 1 5;\n  margin-left: 8px;\n  font-size: 0.8em; }\n\n.role {\n  color: #42a4f4;\n  border-style: solid;\n  border-color: #42a4f4;\n  border-width: 1px; }\n\n.skill {\n  background-color: #e29c3f;\n  color: #FFF;\n  border-style: none;\n  border-radius: 5px;\n  margin-bottom: 4px; }\n", ""]);
 
 // exports
 
@@ -46389,6 +46328,86 @@ exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  fle
 
 // load the styles
 var content = __webpack_require__(516);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(145)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/lib/loader.js!./styles.scss", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/lib/loader.js!./styles.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 518 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(103)();
+// imports
+
+
+// module
+exports.push([module.i, ".navbar-collapse.collapse.in ul {\n  text-align: center;\n  vertical-align: middle; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 519 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(518);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(145)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/lib/loader.js!./styles.scss", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/lib/loader.js!./styles.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 520 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(103)();
+// imports
+
+
+// module
+exports.push([module.i, ".app {\n  max-width: 750px;\n  padding: 0 10px 0 10px;\n  margin: auto; }\n\n.splash-img {\n  max-width: 100%;\n  height: auto;\n  display: block;\n  border-radius: 10px; }\n\n.vertical-center {\n  position: relative;\n  top: 50%;\n  transform: translateY(50%); }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 521 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(520);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(145)(content, {});

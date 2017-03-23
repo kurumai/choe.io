@@ -1,6 +1,7 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
 import { Nav, NavItem, Navbar } from 'react-bootstrap';
+import './styles.scss';
 
 class TopNav extends React.Component {
 
