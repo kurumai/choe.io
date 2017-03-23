@@ -20096,51 +20096,51 @@ var Projects = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'project-description clearfix' },
+							{ className: 'card-text' },
 							_react2.default.createElement(
 								'span',
-								{ className: 'role' },
+								{ className: 'job role' },
 								'Front End Developer'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'role' },
+								{ className: 'job role' },
 								'Alexa Developer'
 							),
 							_react2.default.createElement('div', { className: 'spacer' }),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'React'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Redux'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Amazon Alexa'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'AWS'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Webpack'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Mocha/Chai'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Webpack'
 							)
 						)
@@ -20165,51 +20165,51 @@ var Projects = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'project-description' },
+							{ className: 'card-text' },
 							_react2.default.createElement(
 								'span',
-								{ className: 'role' },
+								{ className: 'job role' },
 								'Back End Developer'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'role' },
+								{ className: 'job role' },
 								'DB Administrator'
 							),
 							_react2.default.createElement('div', { className: 'spacer' }),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'NodeJS'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'KurentoRTC'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Express'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Passport'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Authentication'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'APIs'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'MongoDB'
 							)
 						)
@@ -20234,41 +20234,41 @@ var Projects = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'project-description' },
+							{ className: 'card-text' },
 							_react2.default.createElement(
 								'span',
-								{ className: 'role' },
+								{ className: 'job role' },
 								'Front End Developer'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'role' },
+								{ className: 'job role' },
 								'Back End Developer'
 							),
 							_react2.default.createElement('div', { className: 'spacer' }),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'React'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'NodeJS'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Express'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Facebook OAuth'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Material UI'
 							)
 						)
@@ -20293,31 +20293,31 @@ var Projects = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'project-description' },
+							{ className: 'card-text' },
 							_react2.default.createElement(
 								'span',
-								{ className: 'role' },
+								{ className: 'job role' },
 								'Front End Developer'
 							),
 							_react2.default.createElement('div', { className: 'spacer' }),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Angular'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'NodeJS'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'Express'
 							),
 							_react2.default.createElement(
 								'span',
-								{ className: 'skill' },
+								{ className: 'job skill' },
 								'MongoDB'
 							)
 						)
@@ -46376,7 +46376,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 15px;\n  margin-left: auto;\n  margin-right: auto;\n  width: 90%; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem;\n  font-weight: bold; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 5px; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-img {\n  /*// margin: -1.325rem;*/\n  /*@include border-radius($card-border-radius-inner);*/\n  width: 100%;\n  height: auto;\n  margin-bottom: -10px; }\n\n.card-img-overlay {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  padding: 1.25rem; }\n\n.card-img-top {\n  /*@include border-top-radius($card-border-radius-inner);*/ }\n\n.card-img-bottom {\n  /*@include border-bottom-radius($card-border-radius-inner);*/ }\n\n.project-description {\n  padding-top: 6px;\n  padding-left: -8px;\n  text-align: center; }\n\n.role {\n  color: #42a4f4;\n  border-style: solid;\n  border-color: #42a4f4;\n  border-width: 1px;\n  font-size: 0.8em;\n  padding: 0 5 1 5;\n  margin-left: 8px; }\n\n.spacer {\n  padding: 2px 0; }\n\n.skill {\n  display: inline-block;\n  background-color: #e29c3f;\n  color: #FFF;\n  border-style: none;\n  border-radius: 5px;\n  font-size: 0.8em;\n  padding: 0 5 1 5;\n  margin-left: 8px;\n  margin-bottom: 4px; }\n", ""]);
+exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 15px;\n  margin-left: auto;\n  margin-right: auto;\n  width: 90%; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem;\n  font-weight: bold; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 5px; }\n\n.card-text {\n  padding-top: 6px;\n  padding-left: -8px;\n  text-align: center; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-img {\n  /*// margin: -1.325rem;*/\n  /*@include border-radius($card-border-radius-inner);*/\n  width: 100%;\n  height: auto;\n  margin-bottom: -10px; }\n\n.card-img-top {\n  /*@include border-top-radius($card-border-radius-inner);*/ }\n\n.card-img-bottom {\n  /*@include border-bottom-radius($card-border-radius-inner);*/ }\n\n.spacer {\n  padding: 2px 0; }\n\n.job {\n  display: inline-block;\n  padding: 0 5 1 5;\n  margin-left: 8px;\n  font-size: 0.8em; }\n\n.role {\n  color: #42a4f4;\n  border-style: solid;\n  border-color: #42a4f4;\n  border-width: 1px; }\n\n.skill {\n  background-color: #e29c3f;\n  color: #FFF;\n  border-style: none;\n  border-radius: 5px;\n  margin-bottom: 4px; }\n", ""]);
 
 // exports
 

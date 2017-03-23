@@ -11,17 +11,17 @@ class Projects extends React.Component {
 					<div className="card-block">
 						<h4 className="card-title"><a href="https://my-nanny.org" target="_blank">MyNanny</a></h4>
 						<h6 className="card-subtitle">Virtual assistant for managing your children’s curfews and chores</h6>
-						<div className="project-description clearfix">
-							<span className="role">Front End Developer</span>
-							<span className="role">Alexa Developer</span>
+						<div className="card-text">
+							<span className="job role">Front End Developer</span>
+							<span className="job role">Alexa Developer</span>
 							<div className="spacer"></div>
-							<span className="skill">React</span>
-							<span className="skill">Redux</span>
-							<span className="skill">Amazon Alexa</span>
-							<span className="skill">AWS</span>
-							<span className="skill">Webpack</span>
-							<span className="skill">Mocha/Chai</span>
-							<span className="skill">Webpack</span>
+							<span className="job skill">React</span>
+							<span className="job skill">Redux</span>
+							<span className="job skill">Amazon Alexa</span>
+							<span className="job skill">AWS</span>
+							<span className="job skill">Webpack</span>
+							<span className="job skill">Mocha/Chai</span>
+							<span className="job skill">Webpack</span>
 						</div>
 					</div>
 				</div>
@@ -30,17 +30,17 @@ class Projects extends React.Component {
 					<div className="card-block">
 						<h4 className="card-title">RadRadio</h4>
 						<h6 className="card-subtitle">Create or listen to live audio streams instantly with live messaging</h6>
-						<div className="project-description">
-							<span className="role">Back End Developer</span>
-							<span className="role">DB Administrator</span>
+						<div className="card-text">
+							<span className="job role">Back End Developer</span>
+							<span className="job role">DB Administrator</span>
 							<div className="spacer"></div>
-							<span className="skill">NodeJS</span>
-							<span className="skill">KurentoRTC</span>
-							<span className="skill">Express</span>
-							<span className="skill">Passport</span>
-							<span className="skill">Authentication</span>
-							<span className="skill">APIs</span>
-							<span className="skill">MongoDB</span>
+							<span className="job skill">NodeJS</span>
+							<span className="job skill">KurentoRTC</span>
+							<span className="job skill">Express</span>
+							<span className="job skill">Passport</span>
+							<span className="job skill">Authentication</span>
+							<span className="job skill">APIs</span>
+							<span className="job skill">MongoDB</span>
 						</div>
 					</div>
 				</div>
@@ -49,15 +49,15 @@ class Projects extends React.Component {
 					<div className="card-block">
 						<h4 className="card-title">Roomly</h4>
 						<h6 className="card-subtitle">Web application to find you a new roommate in your Facebook network</h6>
-						<div className="project-description">
-							<span className="role">Front End Developer</span>
-							<span className="role">Back End Developer</span>
+						<div className="card-text">
+							<span className="job role">Front End Developer</span>
+							<span className="job role">Back End Developer</span>
 							<div className="spacer"></div>
-							<span className="skill">React</span>
-							<span className="skill">NodeJS</span>
-							<span className="skill">Express</span>
-							<span className="skill">Facebook OAuth</span>
-							<span className="skill">Material UI</span>
+							<span className="job skill">React</span>
+							<span className="job skill">NodeJS</span>
+							<span className="job skill">Express</span>
+							<span className="job skill">Facebook OAuth</span>
+							<span className="job skill">Material UI</span>
 						</div>
 					</div>
 				</div>
@@ -66,13 +66,13 @@ class Projects extends React.Component {
 					<div className="card-block">
 						<h4 className="card-title">Giftminder</h4>
 						<h6 className="card-subtitle">A web application to help you remember gift ideas for friends and family</h6>
-						<div className="project-description">
-							<span className="role">Front End Developer</span>
+						<div className="card-text">
+							<span className="job role">Front End Developer</span>
 							<div className="spacer"></div>
-							<span className="skill">Angular</span>
-							<span className="skill">NodeJS</span>
-							<span className="skill">Express</span>
-							<span className="skill">MongoDB</span>
+							<span className="job skill">Angular</span>
+							<span className="job skill">NodeJS</span>
+							<span className="job skill">Express</span>
+							<span className="job skill">MongoDB</span>
 						</div>
 					</div>
 				</div>

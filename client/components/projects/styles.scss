@@ -68,8 +68,6 @@ $card-columns-margin:       $card-spacer-y !default;
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .card-title {
@@ -80,6 +78,12 @@ $card-columns-margin:       $card-spacer-y !default;
 .card-subtitle {
   margin-top: -($card-spacer-y / 2);
   margin-bottom: 5px;
+}
+
+.card-text {
+  padding-top: 6px;
+  padding-left: -8px;
+  text-align: center;
 }
 
 .card-text:last-child {
@@ -94,15 +98,6 @@ $card-columns-margin:       $card-spacer-y !default;
   margin-bottom: -10px;
 }
 
-.card-img-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: $card-img-overlay-padding;
-}
-
 .card-img-top {
   /*@include border-top-radius($card-border-radius-inner);*/
 }
@@ -110,37 +105,28 @@ $card-columns-margin:       $card-spacer-y !default;
   /*@include border-bottom-radius($card-border-radius-inner);*/
 }
 
-.project-description {
-	padding-top: 6px;
-	padding-left: -8px;
-  // height: auto;
-  // flex: 1 1 auto;
-  text-align: center;
-}
-
-.role {
-	color: #42a4f4;
-	border-style: solid;
-	border-color: #42a4f4;
-	border-width: 1px;
-	font-size: 0.8em;
-	padding: 0 5 1 5;
-	margin-left: 8px;
-}
-
 .spacer {
 	padding: 2px 0;
 }
 
-.skill {
+.job {
   display: inline-block;
+  padding: 0 5 1 5;
+  margin-left: 8px;
+  font-size: 0.8em;
+}
+
+.role {
+  color: #42a4f4;
+  border-style: solid;
+  border-color: #42a4f4;
+  border-width: 1px;
+}
+
+.skill {
   background-color: #e29c3f;
   color: #FFF;
   border-style: none;
   border-radius: 5px;
-  font-size: 0.8em;
-  padding: 0 5 1 5;
-  margin-left: 8px;
   margin-bottom: 4px;
-  // flex: 0 1;
 }
