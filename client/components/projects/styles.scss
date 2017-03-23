@@ -68,6 +68,8 @@ $card-columns-margin:       $card-spacer-y !default;
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .card-title {
@@ -82,30 +84,6 @@ $card-columns-margin:       $card-spacer-y !default;
 
 .card-text:last-child {
   margin-bottom: 0;
-}
-
-.card-link {
-  /*@include hover {
-    text-decoration: none;
-  }*/
-
-  + .card-link {
-    margin-left: $card-spacer-x;
-  }
-}
-
-.card {
-  > .list-group:first-child {
-    .list-group-item:first-child {
-      /*@include border-top-radius($card-border-radius);*/
-    }
-  }
-
-  > .list-group:last-child {
-    .list-group-item:last-child {
-      /*@include border-bottom-radius($card-border-radius);*/
-    }
-  }
 }
 
 .card-img {
@@ -134,7 +112,10 @@ $card-columns-margin:       $card-spacer-y !default;
 
 .project-description {
 	padding-top: 6px;
-	margin-left: -8px;
+	padding-left: -8px;
+  // height: auto;
+  // flex: 1 1 auto;
+  text-align: center;
 }
 
 .role {
@@ -152,11 +133,14 @@ $card-columns-margin:       $card-spacer-y !default;
 }
 
 .skill {
-	background-color: #e29c3f;
-	color: #FFF;
-	border-style: none;
-	border-radius: 5px;
-	font-size: 0.8em;
-	padding: 0 5 1 5;
-	margin-left: 8px;
+  display: inline-block;
+  background-color: #e29c3f;
+  color: #FFF;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  padding: 0 5 1 5;
+  margin-left: 8px;
+  margin-bottom: 4px;
+  // flex: 0 1;
 }

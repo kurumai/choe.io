@@ -11,7 +11,7 @@ class Projects extends React.Component {
 					<div className="card-block">
 						<h4 className="card-title"><a href="https://my-nanny.org" target="_blank">MyNanny</a></h4>
 						<h6 className="card-subtitle">Virtual assistant for managing your children’s curfews and chores</h6>
-						<div className="project-description">
+						<div className="project-description clearfix">
 							<span className="role">Front End Developer</span>
 							<span className="role">Alexa Developer</span>
 							<div className="spacer"></div>
@@ -35,7 +35,7 @@ class Projects extends React.Component {
 							<span className="role">DB Administrator</span>
 							<div className="spacer"></div>
 							<span className="skill">NodeJS</span>
-							<span className="skill">Kurento RTC</span>
+							<span className="skill">KurentoRTC</span>
 							<span className="skill">Express</span>
 							<span className="skill">Passport</span>
 							<span className="skill">Authentication</span>
