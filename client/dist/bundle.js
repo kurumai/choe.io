@@ -19821,6 +19821,32 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+// class Hello extends React.Component {
+// 	render() {
+// 		return (
+// 			<div className="intro-container">
+// 				<div>
+// 					<img src="assets/splash-profile.jpg" className="splash-img"/>
+// 				</div>
+// 				<div>
+// 					<Jumbotron>	
+// 						<h2>
+// 						Hello, friend.
+// 						</h2>
+// 						<br/>
+// 						<p>
+// 						I’m Eugene, and I build full-stack web applications. 
+// 						</p>
+// 						<p>
+// 						You can find out more about me on <a href="https://github.com/heug" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/eugene-choe" target="_blank">LinkedIn</a>, and <a href="https://www.instagram.com/generalchoe" target="_blank">Instagram</a>.
+// 						</p>
+// 					</Jumbotron>
+// 				</div>
+// 			</div>
+// 		);
+// 	}
+// };
+
 var Hello = function (_React$Component) {
 	_inherits(Hello, _React$Component);
 
@@ -19835,7 +19861,7 @@ var Hello = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'hello' },
 				_react2.default.createElement(
 					_reactBootstrap.Grid,
 					null,
@@ -19844,12 +19870,16 @@ var Hello = function (_React$Component) {
 						null,
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 4, sm: 4, md: 4, lg: 4 },
-							_react2.default.createElement('img', { src: 'assets/splash-profile.jpg', className: 'splash-img' })
+							{ xs: 12, sm: 4, md: 4, lg: 4 },
+							_react2.default.createElement(
+								'div',
+								{ className: 'vertical-center hidden-xs' },
+								_react2.default.createElement('img', { src: 'assets/splash-profile.jpg', className: 'splash-img' })
+							)
 						),
 						_react2.default.createElement(
 							_reactBootstrap.Col,
-							{ xs: 8, sm: 8, md: 8, lg: 8 },
+							{ xs: 12, sm: 8, md: 8, lg: 8 },
 							_react2.default.createElement(
 								_reactBootstrap.Jumbotron,
 								null,
@@ -21329,7 +21359,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, ".app {\n\tmax-width: 750px;\n\tpadding: 0 10px 0 10px;\n\tmargin: auto;\n}\n\n.splash-img {\n\tmax-width: 100%;\n\theight: auto;\n\t/*display: block;*/\n\t/*margin: auto;*/\n\tborder-radius: 10px;\n}", ""]);
+exports.push([module.i, ".app {\n\tmax-width: 750px;\n\tpadding: 0 10px 0 10px;\n\tmargin: auto;\n}\n\n.hello {\n\tmargin: auto;\n}\n\n.splash-img {\n\tmax-width: 100%;\n\theight: auto;\n\tdisplay: block;\n\tborder-radius: 10px;\n}\n\n.vertical-center {\n\tposition: relative;\n\ttop: 50%;\n\ttransform: translateY(50%);\n}", ""]);
 
 // exports
 
