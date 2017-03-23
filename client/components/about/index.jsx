@@ -14,16 +14,16 @@ class About extends React.Component {
 	}
 
 	componentWillMount() {
-		fetch('https://api.github.com/users/heug/repos')
-		.then((res) => {
-			res = res.json();
-			return res;
-		}).then((data) => {
-			data.sort((a,b) => { 
-				return b.updated_at.localeCompare(a.updated_at);
-			});
-			return this.setState({repos: data});
-		});
+		// fetch('https://api.github.com/users/heug/repos')
+		// .then((res) => {
+		// 	res = res.json();
+		// 	return res;
+		// }).then((data) => {
+		// 	data.sort((a,b) => { 
+		// 		return b.updated_at.localeCompare(a.updated_at);
+		// 	});
+		// 	return this.setState({repos: data});
+		// });
 	}
 
 	createRepoList() {

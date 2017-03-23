@@ -19618,17 +19618,16 @@ var About = function (_React$Component) {
 	_createClass(About, [{
 		key: 'componentWillMount',
 		value: function componentWillMount() {
-			var _this2 = this;
-
-			(0, _isomorphicFetch2.default)('https://api.github.com/users/heug/repos').then(function (res) {
-				res = res.json();
-				return res;
-			}).then(function (data) {
-				data.sort(function (a, b) {
-					return b.updated_at.localeCompare(a.updated_at);
-				});
-				return _this2.setState({ repos: data });
-			});
+			// fetch('https://api.github.com/users/heug/repos')
+			// .then((res) => {
+			// 	res = res.json();
+			// 	return res;
+			// }).then((data) => {
+			// 	data.sort((a,b) => { 
+			// 		return b.updated_at.localeCompare(a.updated_at);
+			// 	});
+			// 	return this.setState({repos: data});
+			// });
 		}
 	}, {
 		key: 'createRepoList',
@@ -20018,7 +20017,7 @@ var Projects = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'projects' },
 				_react2.default.createElement(
 					'div',
 					{ className: 'card' },
@@ -20031,7 +20030,7 @@ var Projects = function (_React$Component) {
 							{ className: 'card-title' },
 							_react2.default.createElement(
 								'a',
-								{ href: '#', target: '_blank' },
+								{ href: 'https://my-nanny.org', target: '_blank' },
 								'MyNanny'
 							)
 						),
@@ -20053,7 +20052,7 @@ var Projects = function (_React$Component) {
 								{ className: 'role' },
 								'Alexa Developer'
 							),
-							_react2.default.createElement('br', null),
+							_react2.default.createElement('div', { className: 'spacer' }),
 							_react2.default.createElement(
 								'span',
 								{ className: 'skill' },
@@ -20078,6 +20077,193 @@ var Projects = function (_React$Component) {
 								'span',
 								{ className: 'skill' },
 								'Webpack'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Mocha/Chai'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Webpack'
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'card' },
+					_react2.default.createElement('img', { className: 'card-img', src: 'assets/radradio/1.png', alt: 'RadRadio' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'card-block' },
+						_react2.default.createElement(
+							'h4',
+							{ className: 'card-title' },
+							'RadRadio'
+						),
+						_react2.default.createElement(
+							'h6',
+							{ className: 'card-subtitle' },
+							'Create or listen to live audio streams instantly with live messaging'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'project-description' },
+							_react2.default.createElement(
+								'span',
+								{ className: 'role' },
+								'Back End Developer'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'role' },
+								'DB Administrator'
+							),
+							_react2.default.createElement('div', { className: 'spacer' }),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'NodeJS'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Kurento RTC'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Express'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Passport'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Authentication'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'APIs'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'MongoDB'
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'card' },
+					_react2.default.createElement('img', { className: 'card-img', src: 'assets/roomly/1.png', alt: 'Roomly' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'card-block' },
+						_react2.default.createElement(
+							'h4',
+							{ className: 'card-title' },
+							'Roomly'
+						),
+						_react2.default.createElement(
+							'h6',
+							{ className: 'card-subtitle' },
+							'Web application to find you a new roommate in your Facebook network'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'project-description' },
+							_react2.default.createElement(
+								'span',
+								{ className: 'role' },
+								'Front End Developer'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'role' },
+								'Back End Developer'
+							),
+							_react2.default.createElement('div', { className: 'spacer' }),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'React'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'NodeJS'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Express'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Facebook OAuth'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Material UI'
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'card' },
+					_react2.default.createElement('img', { className: 'card-img', src: 'assets/giftminder/1.png', alt: 'Giftminder' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'card-block' },
+						_react2.default.createElement(
+							'h4',
+							{ className: 'card-title' },
+							'Giftminder'
+						),
+						_react2.default.createElement(
+							'h6',
+							{ className: 'card-subtitle' },
+							'A web application to help you remember gift ideas for friends and family'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'project-description' },
+							_react2.default.createElement(
+								'span',
+								{ className: 'role' },
+								'Front End Developer'
+							),
+							_react2.default.createElement('div', { className: 'spacer' }),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Angular'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'NodeJS'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'Express'
+							),
+							_react2.default.createElement(
+								'span',
+								{ className: 'skill' },
+								'MongoDB'
 							)
 						)
 					)
@@ -20092,69 +20278,6 @@ var Projects = function (_React$Component) {
 ;
 
 exports.default = Projects;
-// <Grid>
-// 	<Row>
-// 		<Col md={12}>
-// 		</Col>
-// 	</Row>
-// </Grid>
-
-// <div class="block-text projects">
-// 	<div class="img-box"><a href="#modal-1"><img src="assets/mynanny/1.png" class="project-img" alt="MyNanny" /></a></div>
-// 	<div class="img-box"><a href="#modal-2"><img src="assets/radradio/1.png" class="project-img" alt="Radradio" /></a></div>
-// 	<br/>
-// 	<div class="img-box"><a href="#modal-3"><img src="assets/roomly/1.png" class="project-img" alt="Roomly" /></a></div>
-// 	<div class="img-box"><a href="#modal-4"><img src="assets/giftminder/1.png" class="project-img" alt="Giftminder" /></a></div>
-// 	<br/>
-// 	<div class="modal-dialog" id="modal-1">
-// 		<div>
-// 			<a href="#" title="Close" class="close">X</a>
-// 			<div class="modal-title">
-// 				myNanny
-// 			</div>
-// 			<img src="assets/mynanny/2.png" class="modal-img" />
-// 			<div class="modal-body">
-// 			  Virtual assistant for managing your children’s curfews and choresParents manage their children through a web portal, and children interact with their Amazon Echo to check in and receive a list of chores. Powered by Amazon Alexa and hosted on AWS Lambda and Express servers, with a front-end using React, Redux, and Bootstrap. 80% test coverage.
-// 			</div>
-// 		</div>
-// 	</div>
-// 	<div class="modal-dialog" id="modal-2">
-// 		<div>
-// 			<a href="#close" title="Close" class="close">X</a>
-// 			<div class="modal-title">
-// 				Radradio
-// 			</div>
-// 			<img src="assets/radradio/2.png" class="modal-img" />
-// 			<div class="modal-body">
-// 				Create or listen to live audio streams instantly with live messaging. Streams are archived and available for access after live streams terminate. Built with Kurento Media Server, socket.io, React, Express, Passport, and MongoDB.
-// 			</div>
-// 		</div>
-// 	</div>
-// 	<div class="modal-dialog" id="modal-3">
-// 		<div>
-// 			<a href="#close" title="Close" class="close">X</a>
-// 			<div class="modal-title">
-// 				Roomly
-// 			</div>
-// 			<img src="assets/roomly/2.png" class="modal-img" />
-// 			<div class="modal-body">
-// 				Web application to assist in finding a new roommate in your Facebook network. Built with React, Redux, Facebook OAuth, Express, MongoDB, and Webpack.
-// 			</div>
-// 		</div>
-// 	</div>
-// 	<div class="modal-dialog" id="modal-4">
-// 		<div>
-// 			<a href="#close" title="Close" class="close">X</a>
-// 			<div class="modal-title">
-// 				Giftminder
-// 			</div>
-// 			<img src="assets/giftminder/2.png" class="modal-img" />
-// 			<div class="modal-body">
-// 				A simple application to help you remind yourself of gift ideas for friends and family. Built with Angular 1, Express, and MongoDB. Stylized with Bootstrap.
-// 			</div>
-// 		</div>
-// 	</div>
-// </div>
 
 /***/ }),
 /* 236 */,
@@ -46198,7 +46321,7 @@ exports = module.exports = __webpack_require__(103)();
 
 
 // module
-exports.push([module.i, ".card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 5px; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 5px; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-link {\n  /*@include hover {\n    text-decoration: none;\n  }*/ }\n  .card-link + .card-link {\n    margin-left: 1.25rem; }\n\n.card > .list-group:first-child .list-group-item:first-child {\n  /*@include border-top-radius($card-border-radius);*/ }\n\n.card > .list-group:last-child .list-group-item:last-child {\n  /*@include border-bottom-radius($card-border-radius);*/ }\n\n.card-img {\n  /*// margin: -1.325rem;*/\n  /*@include border-radius($card-border-radius-inner);*/\n  width: 100%;\n  height: auto; }\n\n.card-img-overlay {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  padding: 1.25rem; }\n\n.card-img-top {\n  /*@include border-top-radius($card-border-radius-inner);*/ }\n\n.card-img-bottom {\n  /*@include border-bottom-radius($card-border-radius-inner);*/ }\n\n.project-description {\n  margin: auto;\n  text-align: center; }\n\n.role {\n  color: #FDBA62;\n  border-style: solid;\n  border-color: #FDBA62;\n  border-width: 1px;\n  font-size: 0.8em;\n  padding: 0 5 1 5;\n  margin-left: 8px; }\n\n.skill {\n  background-color: blue;\n  color: #FFF;\n  border-style: none;\n  border-radius: 5px;\n  font-size: 0.8em;\n  padding: 0 5 1 5;\n  margin-left: 8px; }\n", ""]);
+exports.push([module.i, ".projects {\n  max-width: 700px;\n  margin: auto; }\n\n.card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: #fff;\n  border: 1px solid rgba(0, 0, 0, 0.125);\n  border-radius: 2px;\n  margin-bottom: 15px;\n  margin-left: auto;\n  margin-right: auto;\n  width: 90%; }\n\n.card-block {\n  flex: 1 1 auto;\n  padding: 1.25rem; }\n\n.card-title {\n  margin-bottom: 0.75rem;\n  font-weight: bold; }\n\n.card-subtitle {\n  margin-top: -0.375rem;\n  margin-bottom: 5px; }\n\n.card-text:last-child {\n  margin-bottom: 0; }\n\n.card-link {\n  /*@include hover {\n    text-decoration: none;\n  }*/ }\n  .card-link + .card-link {\n    margin-left: 1.25rem; }\n\n.card > .list-group:first-child .list-group-item:first-child {\n  /*@include border-top-radius($card-border-radius);*/ }\n\n.card > .list-group:last-child .list-group-item:last-child {\n  /*@include border-bottom-radius($card-border-radius);*/ }\n\n.card-img {\n  /*// margin: -1.325rem;*/\n  /*@include border-radius($card-border-radius-inner);*/\n  width: 100%;\n  height: auto;\n  margin-bottom: -10px; }\n\n.card-img-overlay {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  padding: 1.25rem; }\n\n.card-img-top {\n  /*@include border-top-radius($card-border-radius-inner);*/ }\n\n.card-img-bottom {\n  /*@include border-bottom-radius($card-border-radius-inner);*/ }\n\n.project-description {\n  padding-top: 6px;\n  margin-left: -8px; }\n\n.role {\n  color: #42a4f4;\n  border-style: solid;\n  border-color: #42a4f4;\n  border-width: 1px;\n  font-size: 0.8em;\n  padding: 0 5 1 5;\n  margin-left: 8px; }\n\n.spacer {\n  padding: 2px 0; }\n\n.skill {\n  background-color: #e29c3f;\n  color: #FFF;\n  border-style: none;\n  border-radius: 5px;\n  font-size: 0.8em;\n  padding: 0 5 1 5;\n  margin-left: 8px; }\n", ""]);
 
 // exports
 
