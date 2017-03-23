@@ -19,6 +19,10 @@ class TopNav extends React.Component {
 	}
 
 	handleLink(eventKey) {
+		analytics.track('Clicked Action', {
+			location: 'nav',
+			text: eventKey
+		});
 		browserHistory.push(this.state.links[eventKey]);
 	}
 
