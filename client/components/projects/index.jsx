@@ -5,9 +5,9 @@ import './styles.scss';
 class Projects extends React.Component {
 	render() {
 		return (
-			<div className="projects">
+			<div>
 				<div className="card">
-					<img className="card-img" src="assets/mynanny/1.png" alt="MyNanny" />
+					<img className="card-img" src="assets/mynanny/2.png" alt="MyNanny" />
 					<div className="card-block">
 						<h4 className="card-title"><a href="https://my-nanny.org" target="_blank">MyNanny</a></h4>
 						<h6 className="card-subtitle">Virtual assistant for managing your children’s curfews and chores</h6>
@@ -26,7 +26,7 @@ class Projects extends React.Component {
 					</div>
 				</div>
 				<div className="card">
-					<img className="card-img" src="assets/radradio/1.png" alt="RadRadio" />
+					<img className="card-img" src="assets/radradio/2.png" alt="RadRadio" />
 					<div className="card-block">
 						<h4 className="card-title">RadRadio</h4>
 						<h6 className="card-subtitle">Create or listen to live audio streams instantly with live messaging</h6>
@@ -45,7 +45,7 @@ class Projects extends React.Component {
 					</div>
 				</div>
 				<div className="card">
-					<img className="card-img" src="assets/roomly/1.png" alt="Roomly" />
+					<img className="card-img" src="assets/roomly/2.png" alt="Roomly" />
 					<div className="card-block">
 						<h4 className="card-title">Roomly</h4>
 						<h6 className="card-subtitle">Web application to find you a new roommate in your Facebook network</h6>

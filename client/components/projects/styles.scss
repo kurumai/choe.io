@@ -50,11 +50,6 @@ $card-columns-count:        3 !default;
 $card-columns-gap:          1.25rem !default;
 $card-columns-margin:       $card-spacer-y !default;
 
-.projects {
-	max-width: 700px;
-	margin: auto;
-}
-
 .card {
   position: relative;
   display: flex;
