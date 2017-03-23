@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate",
-  "version": "1.0.0",
+  "name": "choe.io",
+  "version": "2.0.0",
   "description": "",
   "main": "server.js",
   "dependencies": {
@@ -23,7 +23,7 @@
     "webpack": "^2.2.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "webpack --watch --progress & nodemon server.js"
   },
   "repository": {
     "type": "git",

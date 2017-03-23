@@ -8,5 +8,5 @@ app.get('*', function(req, res) {
   return res.sendFile(__dirname + '/client/index.html');
 });
 
-console.log('listening on port 1337');
-app.listen(1337);
+console.log('listening on port 80');
+app.listen(80);
