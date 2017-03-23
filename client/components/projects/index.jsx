@@ -3,13 +3,21 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import './styles.scss';
 
 class Projects extends React.Component {
+
+	myNanny() {
+		analytics.track('Clicked Action', {
+			location: 'projects',
+			text: 'myNanny'
+		});
+	}
+
 	render() {
 		return (
 			<div>
 				<div className="proj-card">
 					<img className="proj-card-img" src="assets/mynanny/2.png" alt="MyNanny" />
 					<div className="proj-card-block">
-						<h4 className="proj-card-title"><a href="https://my-nanny.org" target="_blank">MyNanny</a></h4>
+						<h4 className="proj-card-title"><a href="https://my-nanny.org" onClick={this.myNanny} target="_blank">MyNanny</a></h4>
 						<h6 className="proj-card-subtitle">Virtual assistant for managing your children’s curfews and chores</h6>
 						<div className="proj-card-text">
 							<span className="job role">Front End Developer</span>

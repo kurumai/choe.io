@@ -19832,6 +19832,38 @@ var Hello = function (_React$Component) {
 	}
 
 	_createClass(Hello, [{
+		key: 'clickGH',
+		value: function clickGH() {
+			analytics.track('Clicked Action', {
+				location: 'hello',
+				text: 'github'
+			});
+		}
+	}, {
+		key: 'clickLI',
+		value: function clickLI() {
+			analytics.track('Clicked Action', {
+				location: 'hello',
+				text: 'linkedin'
+			});
+		}
+	}, {
+		key: 'clickIG',
+		value: function clickIG() {
+			analytics.track('Clicked Action', {
+				location: 'hello',
+				text: 'instagram'
+			});
+		}
+	}, {
+		key: 'clickEm',
+		value: function clickEm() {
+			analytics.track('Clicked Action', {
+				location: 'hello',
+				text: 'email'
+			});
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
@@ -19875,25 +19907,25 @@ var Hello = function (_React$Component) {
 									'You can find out more about me on ',
 									_react2.default.createElement(
 										'a',
-										{ href: 'https://github.com/heug', target: '_blank' },
+										{ href: 'https://github.com/heug', target: '_blank', onClick: this.clickGH },
 										'GitHub'
 									),
 									', ',
 									_react2.default.createElement(
 										'a',
-										{ href: 'https://www.linkedin.com/in/eugene-choe', target: '_blank' },
+										{ href: 'https://www.linkedin.com/in/eugene-choe', target: '_blank', onClick: this.clickLI },
 										'LinkedIn'
 									),
 									', and ',
 									_react2.default.createElement(
 										'a',
-										{ href: 'https://www.instagram.com/generalchoe', target: '_blank' },
+										{ href: 'https://www.instagram.com/generalchoe', target: '_blank', onClick: this.clickIG },
 										'Instagram'
 									),
 									'. Or just shoot me an ',
 									_react2.default.createElement(
 										'a',
-										{ href: 'mailto:eugene.choe+choe.io@gmail.com' },
+										{ href: 'mailto:eugene.choe+choe.io@gmail.com', onClick: this.clickEm },
 										'e-mail'
 									),
 									'.'
@@ -19966,6 +19998,10 @@ var TopNav = function (_React$Component) {
 	_createClass(TopNav, [{
 		key: 'handleLink',
 		value: function handleLink(eventKey) {
+			analytics.track('Clicked Action', {
+				location: 'nav',
+				text: eventKey
+			});
 			_reactRouter.browserHistory.push(this.state.links[eventKey]);
 		}
 	}, {
@@ -20051,6 +20087,14 @@ var Projects = function (_React$Component) {
 	}
 
 	_createClass(Projects, [{
+		key: 'myNanny',
+		value: function myNanny() {
+			analytics.track('Clicked Action', {
+				location: 'projects',
+				text: 'myNanny'
+			});
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
@@ -20068,7 +20112,7 @@ var Projects = function (_React$Component) {
 							{ className: 'proj-card-title' },
 							_react2.default.createElement(
 								'a',
-								{ href: 'https://my-nanny.org', target: '_blank' },
+								{ href: 'https://my-nanny.org', onClick: this.myNanny, target: '_blank' },
 								'MyNanny'
 							)
 						),

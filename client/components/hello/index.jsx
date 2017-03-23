@@ -3,6 +3,35 @@ import { Grid, Row, Col, Jumbotron } from 'react-bootstrap';
 import './styles.scss';
 
 class Hello extends React.Component {
+
+	clickGH() {
+		analytics.track('Clicked Action', {
+			location: 'hello',
+			text: 'github'
+		});
+	}
+
+	clickLI() {
+		analytics.track('Clicked Action', {
+			location: 'hello',
+			text: 'linkedin'
+		});
+	}
+
+	clickIG() {
+		analytics.track('Clicked Action', {
+			location: 'hello',
+			text: 'instagram'
+		});
+	}
+
+	clickEm() {
+		analytics.track('Clicked Action', {
+			location: 'hello',
+			text: 'email'
+		});
+	}
+
 	render() {
 		return (
 			<div>
@@ -23,7 +52,7 @@ class Hello extends React.Component {
 								I’m Eugene, and I build full-stack web applications. 
 								</p>
 								<p>
-								You can find out more about me on <a href="https://github.com/heug" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/eugene-choe" target="_blank">LinkedIn</a>, and <a href="https://www.instagram.com/generalchoe" target="_blank">Instagram</a>. Or just shoot me an <a href="mailto:eugene.choe+choe.io@gmail.com">e-mail</a>.
+								You can find out more about me on <a href="https://github.com/heug" target="_blank" onClick={this.clickGH}>GitHub</a>, <a href="https://www.linkedin.com/in/eugene-choe" target="_blank" onClick={this.clickLI}>LinkedIn</a>, and <a href="https://www.instagram.com/generalchoe" target="_blank" onClick={this.clickIG}>Instagram</a>. Or just shoot me an <a href="mailto:eugene.choe+choe.io@gmail.com" onClick={this.clickEm}>e-mail</a>.
 								</p>
 							</Jumbotron>
 						</Col>
