@@ -17,25 +17,32 @@
     "babel-preset-react": "^6.22.0",
     "chai": "^3.5.0",
     "css-loader": "^0.26.1",
+    "enzyme": "^2.8.0",
+    "ignore-styles": "^5.0.1",
+    "imports-loader": "^0.7.1",
+    "jsdom": "^9.12.0",
+    "jsdom-global": "^2.1.1",
     "mocha": "^3.2.0",
+    "mocha-webpack": "^0.7.0",
     "node-sass": "^4.5.0",
     "postcss-loader": "^1.2.2",
     "sass-loader": "^5.0.1",
+    "sinon": "^2.1.0",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1"
   },
   "scripts": {
     "start": "webpack --watch --progress & nodemon server.js",
-    "test": "mocha"
+    "test": "mocha-webpack --webpack-config webpack.config-test.js \"test/components/ci.spec.js\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heug/boilerplate.git"
+    "url": "git+https://github.com/heug/choe.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/heug/boilerplate/issues"
+    "url": "https://github.com/heug/choe.io/issues"
   },
-  "homepage": "https://github.com/heug/boilerplate#readme"
+  "homepage": "https://github.com/heug/choe.io#readme"
 }
