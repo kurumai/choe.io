@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Resume extends React.Component {
+export class Resume extends React.Component {
 	render() {
 		return (
 			<div class="block-text resume">
@@ -10,6 +10,3 @@ class Resume extends React.Component {
 		);
 	}
 };
-
-export default Resume;
-

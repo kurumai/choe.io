@@ -3,7 +3,7 @@ import { browserHistory } from 'react-router';
 import { Nav, NavItem, Navbar } from 'react-bootstrap';
 import './styles.scss';
 
-class TopNav extends React.Component {
+export class TopNav extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -42,5 +42,3 @@ class TopNav extends React.Component {
 		);
 	}
 };
-
-export default TopNav;

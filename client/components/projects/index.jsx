@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './styles.scss';
 
-class Projects extends React.Component {
+export class Projects extends React.Component {
 
 	myNanny() {
 		analytics.track('Clicked Action', {
@@ -88,5 +88,3 @@ class Projects extends React.Component {
 		);
 	}
 };
-
-export default Projects;

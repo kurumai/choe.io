@@ -19578,6 +19578,7 @@ _reactDom2.default.render(_react2.default.createElement(_routes2.default, { hist
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+exports.About = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -19601,7 +19602,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var About = function (_React$Component) {
+var About = exports.About = function (_React$Component) {
 	_inherits(About, _React$Component);
 
 	function About(props) {
@@ -19730,8 +19731,6 @@ var About = function (_React$Component) {
 
 ;
 
-exports.default = About;
-
 /***/ }),
 /* 232 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -19742,6 +19741,7 @@ exports.default = About;
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+exports.App = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -19753,8 +19753,6 @@ var _reactBootstrap = __webpack_require__(49);
 
 var _nav = __webpack_require__(235);
 
-var _nav2 = _interopRequireDefault(_nav);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19763,7 +19761,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var App = function (_Component) {
+var App = exports.App = function (_Component) {
 	_inherits(App, _Component);
 
 	function App(props) {
@@ -19778,7 +19776,7 @@ var App = function (_Component) {
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement(_nav2.default, null),
+				_react2.default.createElement(_nav.TopNav, null),
 				_react2.default.createElement(
 					'div',
 					{ className: 'app' },
@@ -19791,7 +19789,7 @@ var App = function (_Component) {
 	return App;
 }(_react.Component);
 
-exports.default = App;
+;
 
 /***/ }),
 /* 233 */
@@ -19887,6 +19885,7 @@ var Ci = exports.Ci = function (_React$Component) {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+exports.Hello = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -19906,7 +19905,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Hello = function (_React$Component) {
+var Hello = exports.Hello = function (_React$Component) {
 	_inherits(Hello, _React$Component);
 
 	function Hello() {
@@ -20027,8 +20026,6 @@ var Hello = function (_React$Component) {
 
 ;
 
-exports.default = Hello;
-
 /***/ }),
 /* 235 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -20039,6 +20036,7 @@ exports.default = Hello;
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+exports.TopNav = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -20060,7 +20058,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var TopNav = function (_React$Component) {
+var TopNav = exports.TopNav = function (_React$Component) {
 	_inherits(TopNav, _React$Component);
 
 	function TopNav(props) {
@@ -20130,8 +20128,6 @@ var TopNav = function (_React$Component) {
 
 ;
 
-exports.default = TopNav;
-
 /***/ }),
 /* 236 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -20142,6 +20138,7 @@ exports.default = TopNav;
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+exports.Projects = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -20161,7 +20158,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Projects = function (_React$Component) {
+var Projects = exports.Projects = function (_React$Component) {
 	_inherits(Projects, _React$Component);
 
 	function Projects() {
@@ -20443,8 +20440,6 @@ var Projects = function (_React$Component) {
 
 ;
 
-exports.default = Projects;
-
 /***/ }),
 /* 237 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -20468,23 +20463,13 @@ var _reactRouter = __webpack_require__(140);
 
 var _app = __webpack_require__(232);
 
-var _app2 = _interopRequireDefault(_app);
-
 var _hello = __webpack_require__(234);
-
-var _hello2 = _interopRequireDefault(_hello);
 
 var _about = __webpack_require__(231);
 
-var _about2 = _interopRequireDefault(_about);
-
 var _projects = __webpack_require__(236);
 
-var _projects2 = _interopRequireDefault(_projects);
-
 var _ci = __webpack_require__(233);
-
-var _ci2 = _interopRequireDefault(_ci);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20494,11 +20479,11 @@ var Routes = function Routes(props) {
 		props,
 		_react2.default.createElement(
 			_reactRouter.Route,
-			{ path: '/', component: _app2.default },
-			_react2.default.createElement(_reactRouter.IndexRoute, { component: _hello2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'projects', component: _projects2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'ci', component: _ci2.default })
+			{ path: '/', component: _app.App },
+			_react2.default.createElement(_reactRouter.IndexRoute, { component: _hello.Hello }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about.About }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'projects', component: _projects.Projects }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'ci', component: _ci.Ci })
 		)
 	);
 };
