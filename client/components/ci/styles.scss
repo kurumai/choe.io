@@ -1,0 +1,26 @@
+.app {
+	max-width: 750px;
+	padding: 0 10px 0 10px;
+	margin: auto;
+}
+
+.splash-img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 10px;
+}
+
+.vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(50%);
+}
+
+.project {
+	text-align: center;
+}
+
+.pad-top {
+	padding-top: 20px;
+}

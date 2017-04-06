@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Row, Col, Jumbotron } from 'react-bootstrap';
 import './styles.scss';
 
-class Hello extends React.Component {
+export class Hello extends React.Component {
 
 	clickGH() {
 		analytics.track('Clicked Action', {
@@ -62,5 +62,3 @@ class Hello extends React.Component {
 		);
 	}
 };
-
-export default Hello;

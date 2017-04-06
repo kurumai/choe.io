@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import fetch from 'isomorphic-fetch';
 import './styles.scss';
 
-class About extends React.Component {
+export class About extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -77,5 +77,3 @@ class About extends React.Component {
 		);
 	}
 };
-
-export default About;

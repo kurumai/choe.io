@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import TopNav from '../nav';
+import { TopNav } from '../nav';
 
 
-class App extends Component {
+export class App extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -18,6 +18,4 @@ class App extends Component {
 			</div>
 		);
 	}
-}
-
-export default App;
+};
