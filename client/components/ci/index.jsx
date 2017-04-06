@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Grid, Row, Col, Jumbotron } from 'react-bootstrap';
 import './styles.scss';
 
-class Ci extends React.Component {
+export class Ci extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -21,8 +21,8 @@ class Ci extends React.Component {
 			<div className="project">
 				<h1>A Trivial Application</h1>
 				<div className="pad-top">
-					<Button onClick={this.clickButton.bind(this)}>Toggle text</Button>
-					<div className="pad-top">
+					<Button onClick={this.clickButton.bind(this)} id="btn-1">Toggle text</Button>
+					<div className="pad-top" id="sentence">
 						{this.state.showText ? 'CircleCI is Continuous Integration' : ''}
 					</div>
 				</div>
@@ -30,5 +30,3 @@ class Ci extends React.Component {
 		);
 	}
 };
-
-export default Ci;

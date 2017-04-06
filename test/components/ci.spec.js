@@ -2,45 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { expect } from 'chai';
 import { mount, shallow, render } from 'enzyme';
-import sinon from 'sinon';
 import { Ci } from '../../client/components/ci/';
-
-const assert = require('assert');
 
 describe('Trivial Application', function() {
 	describe('Button', function() {
-		it('should pass because it should', function() {
-			assert.equal(-1, [1,2,3].indexOf(4));
+		it('toggles text state on click', function() {
+			const tester = mount(<Ci />);
+			expect(tester.state('showText')).to.equal(false);
+			tester.find('#btn-1').simulate('click');
+			expect(tester.state('showText')).to.equal(true);
+			tester.find('#btn-1').simulate('click');
+			expect(tester.state('showText')).to.equal(false);
 		});
 		it('should display text when clicked', function() {
-			assert.equal(-1, [1,2,3].indexOf(4));
+			const tester = mount(<Ci />);
+			expect(tester.find('#sentence').text()).to.equal('');
+			tester.find('#btn-1').simulate('click');
+			expect(tester.find('#sentence').text()).to.equal('CircleCI is Continuous Integration');
 		});
 	});	
 });
-
-// var dispatch = function() {
-//    console.log('>>>>>>>> Mocking dispatch ');
-//  };
-// var props = {
-//    dispatch: dispatch,
-//    routeParams: {test_id: 1},
-//    tests_rdcr: {}
-//   };
-// describe('QuestionsComponent', function () {
-// it('QuestionsComponent calls componentWillMount', () => {
-//      sinon.spy(QuestionsComponent.prototype, 'componentWillMount');
-//      const enzymeWrapper = mount(<QuestionsComponent {...props} />);
-//      expect(QuestionsComponent.prototype.componentWillMount.calledOnce).to.equal(true);
-//    });
-// it("QuestionsComponent does not render questions_div", function() {
-//      expect(shallow(<QuestionsComponent {...props} />).contains(<div className="questions_div" />)).to.equal(false);
-//    });
-// it("QuestionsComponent does not render questions_div", function() {
-//       var answers = [{id:1, answer: 'answer uno',  correct: true,  active: true, question_id: 1},
-//                      {id:2, answer: 'answer dos ',  correct: true,  active: true, question_id: 1},
-//                      {id:3, answer: 'answer tres',  correct: true,  active: true, question_id: 1}
-//                     ];
-// props['QuestionsArrayProp'] = answers;
-//     expect(mount(<QuestionsComponent {...props} />).find('.questions_div').length).to.equal(3);
-//   });
-// });
