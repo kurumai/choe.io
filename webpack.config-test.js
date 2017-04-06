@@ -2,12 +2,10 @@ var path = require('path');
 var webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
 
-
 module.exports = {
 	entry: ['./client/main.js','./client/styles.css'],
 	target: 'node',
 	externals: [nodeExternals()],
-	// devtool: 'eval',
 	output: { path: __dirname + '/client/dist', filename: 'bundle.js' },
 	module: {
 		loaders: [
