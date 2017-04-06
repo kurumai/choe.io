@@ -19825,27 +19825,47 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Ci = function (_React$Component) {
 	_inherits(Ci, _React$Component);
 
-	function Ci() {
+	function Ci(props) {
 		_classCallCheck(this, Ci);
 
-		return _possibleConstructorReturn(this, (Ci.__proto__ || Object.getPrototypeOf(Ci)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (Ci.__proto__ || Object.getPrototypeOf(Ci)).call(this, props));
+
+		_this.state = {
+			showText: false
+		};
+		return _this;
 	}
 
 	_createClass(Ci, [{
+		key: 'clickButton',
+		value: function clickButton(e) {
+			e.preventDefault();
+			this.setState({ showText: !this.state.showText });
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'project' },
 				_react2.default.createElement(
 					'h1',
 					null,
-					'here is a button'
+					'A Trivial Application'
 				),
 				_react2.default.createElement(
-					_reactBootstrap.Button,
-					null,
-					'BUTTON'
+					'div',
+					{ className: 'pad-top' },
+					_react2.default.createElement(
+						_reactBootstrap.Button,
+						{ onClick: this.clickButton.bind(this) },
+						'Toggle text'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'pad-top' },
+						this.state.showText ? 'CircleCI is Continuous Integration' : ''
+					)
 				)
 			);
 		}
@@ -21483,7 +21503,7 @@ exports = module.exports = __webpack_require__(47)();
 
 
 // module
-exports.push([module.i, ".app {\n  max-width: 750px;\n  padding: 0 10px 0 10px;\n  margin: auto; }\n\n.splash-img {\n  max-width: 100%;\n  height: auto;\n  display: block;\n  border-radius: 10px; }\n\n.vertical-center {\n  position: relative;\n  top: 50%;\n  transform: translateY(50%); }\n", ""]);
+exports.push([module.i, ".app {\n  max-width: 750px;\n  padding: 0 10px 0 10px;\n  margin: auto; }\n\n.splash-img {\n  max-width: 100%;\n  height: auto;\n  display: block;\n  border-radius: 10px; }\n\n.vertical-center {\n  position: relative;\n  top: 50%;\n  transform: translateY(50%); }\n\n.project {\n  text-align: center; }\n\n.pad-top {\n  padding-top: 20px; }\n", ""]);
 
 // exports
 
