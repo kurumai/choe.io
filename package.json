@@ -5,6 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.14.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
@@ -35,7 +37,8 @@
     "webpack-node-externals": "^1.5.4"
   },
   "scripts": {
-    "start": "webpack --watch --progress & nodemon server.js",
+    "prod": "forever server.js & webpack --progress",
+    "start": "nodemon server.js & webpack --watch --progress",
     "test": "mocha-webpack --webpack-config webpack.config-test.js \"test/**/*.spec.js\""
   },
   "repository": {
