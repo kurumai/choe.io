@@ -1,0 +1,10 @@
+version: 2
+jobs:
+    build:
+      working_directory: ~/Users/eugenechoe/sandbox/choe.io
+      docker:
+        - image: circleci/node:6.10.3
+      steps:
+        - checkout
+        - run: echo "hello world"
+
