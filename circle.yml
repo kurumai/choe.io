@@ -1,3 +1,7 @@
 general:
   artifacts:
     - "test/"
+
+dependencies:
+  pre:
+    - npm config set registry http://registry.npmjs.org/
