@@ -1,3 +1,7 @@
+machine:
+  node:
+    version: 6.11.0
+
 general:
   artifacts:
     - "test/"
@@ -5,3 +9,4 @@ general:
 dependencies:
   pre:
     - npm config set registry http://registry.npmjs.org/
+    - npm update
