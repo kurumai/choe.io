@@ -1,0 +1,20 @@
+version: 2.1
+
+orbs:
+  node-orb: heug/node@dev:0.0.2
+
+jobs:
+  build:
+    executor:
+      name: node-orb/node # put executor in the name
+      tag: "6.11"
+    steps:
+      - checkout
+      - node-orb/install_package_manager:
+          npm: true
+
+
+workflows:
+  build-test-deploy:
+    jobs:
+      - build
