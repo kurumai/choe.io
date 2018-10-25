@@ -14,7 +14,8 @@ jobs:
           npm: true
       - node-orb/with_cache:
           steps:
-            - run: npm install
+            - run: 
+                command: npm install
       - npm test
 
 workflows:
