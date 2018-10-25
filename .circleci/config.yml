@@ -12,7 +12,10 @@ jobs:
       - checkout
       - node-orb/install_package_manager:
           npm: true
-
+      - node-orb/with_cache:
+          steps:
+            - run: npm install
+      - npm test
 
 workflows:
   build-test-deploy:
