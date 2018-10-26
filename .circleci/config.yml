@@ -7,7 +7,7 @@ jobs:
   build:
     executor:
       name: node-orb/node # put executor in the name
-      tag: "11"
+      tag: "6"
     steps:
       - checkout
       - node-orb/install_package_manager:
