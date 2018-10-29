@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.043" tests="2" failures="0">
-  <testsuite name="Root Suite" timestamp="2018-10-29T00:36:46" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.062" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-10-29T00:44:28" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Trivial Application" timestamp="2018-10-29T00:36:46" tests="0" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0">
+  <testsuite name="Trivial Application" timestamp="2018-10-29T00:44:28" tests="0" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/ci.spec.js" failures="0" time="0">
   </testsuite>
-  <testsuite name="Button" timestamp="2018-10-29T00:36:46" tests="2" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0.043">
-    <testcase name="Trivial Application Button toggles text state on click" time="0.039" classname="toggles text state on click">
+  <testsuite name="Button" timestamp="2018-10-29T00:44:28" tests="2" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/ci.spec.js" failures="0" time="0.062">
+    <testcase name="Trivial Application Button toggles text state on click" time="0.057" classname="toggles text state on click">
     </testcase>
-    <testcase name="Trivial Application Button should display text when clicked" time="0.004" classname="should display text when clicked">
+    <testcase name="Trivial Application Button should display text when clicked" time="0.005" classname="should display text when clicked">
     </testcase>
   </testsuite>
 </testsuites>
