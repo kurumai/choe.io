@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.066" tests="3" failures="0">
-  <testsuite name="Root Suite" timestamp="2018-10-29T01:15:55" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.12400000000000001" tests="12" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-10-29T01:44:35" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Trivial Application" timestamp="2018-10-29T01:15:55" tests="0" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/ci.spec.js" failures="0" time="0">
+  <testsuite name="Trivial Application" timestamp="2018-10-29T01:44:35" tests="0" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0">
   </testsuite>
-  <testsuite name="Button" timestamp="2018-10-29T01:15:55" tests="3" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/ci.spec.js" failures="0" time="0.066">
-    <testcase name="Trivial Application Button toggles text state on click" time="0.047" classname="toggles text state on click">
+  <testsuite name="Button" timestamp="2018-10-29T01:44:35" tests="3" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0.062">
+    <testcase name="Trivial Application Button toggles text state on click" time="0.049" classname="toggles text state on click">
     </testcase>
-    <testcase name="Trivial Application Button should display text when clicked" time="0.011" classname="should display text when clicked">
+    <testcase name="Trivial Application Button should display text when clicked" time="0.006" classname="should display text when clicked">
     </testcase>
-    <testcase name="Trivial Application Button should take a little time" time="0.008" classname="should take a little time">
+    <testcase name="Trivial Application Button should take a little time" time="0.007" classname="should take a little time">
+    </testcase>
+  </testsuite>
+  <testsuite name="Trivial Application" timestamp="2018-10-29T01:44:35" tests="0" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Button" timestamp="2018-10-29T01:44:35" tests="3" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0.02">
+    <testcase name="Trivial Application Button tester1-1" time="0.006" classname="tester1-1">
+    </testcase>
+    <testcase name="Trivial Application Button tester1-2" time="0.009" classname="tester1-2">
+    </testcase>
+    <testcase name="Trivial Application Button tester1-3" time="0.005" classname="tester1-3">
+    </testcase>
+  </testsuite>
+  <testsuite name="Trivial Application" timestamp="2018-10-29T01:44:35" tests="0" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Button" timestamp="2018-10-29T01:44:35" tests="3" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0.023">
+    <testcase name="Trivial Application Button tester2-1" time="0.009" classname="tester2-1">
+    </testcase>
+    <testcase name="Trivial Application Button tester2-2" time="0.006" classname="tester2-2">
+    </testcase>
+    <testcase name="Trivial Application Button tester2-3" time="0.008" classname="tester2-3">
+    </testcase>
+  </testsuite>
+  <testsuite name="Trivial Application" timestamp="2018-10-29T01:44:35" tests="0" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Button" timestamp="2018-10-29T01:44:35" tests="3" file="/Users/eugenechoe/sandbox/choe.io/.tmp/mocha-webpack/3f3d194d877987c8d5ac998074b6bc80/3f3d194d877987c8d5ac998074b6bc80-output.js" failures="0" time="0.019">
+    <testcase name="Trivial Application Button tester3-1" time="0.006" classname="tester3-1">
+    </testcase>
+    <testcase name="Trivial Application Button tester3-2" time="0.005" classname="tester3-2">
+    </testcase>
+    <testcase name="Trivial Application Button tester3-3" time="0.008" classname="tester3-3">
     </testcase>
   </testsuite>
 </testsuites>

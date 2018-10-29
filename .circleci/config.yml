@@ -23,7 +23,7 @@ jobs:
           steps:
             - run: env
             - run: 
-                command: npm test ${TESTFILES}
+                command: npm test --glob ${TESTFILES}
                 environment:
                   MOCHA_FILE: ~/project/junit/test-results.xml
                 when: always
