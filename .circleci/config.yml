@@ -36,6 +36,7 @@ jobs:
           path: ~/project/junit
       - store_artifacts:
           path: ~/project/junit
+      - run: env
 
 workflows:
   build-test-deploy:
