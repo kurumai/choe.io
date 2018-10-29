@@ -42,7 +42,7 @@
   "scripts": {
     "prod": "forever server.js & webpack --progress",
     "start": "nodemon server.js & webpack --watch --progress",
-    "test": "mocha-webpack --reporter mocha-junit-reporter --webpack-config webpack.config-test.js \"test/components/ci.spec.js\""
+    "test": "mocha-webpack --reporter mocha-junit-reporter --webpack-config webpack.config-test.js"
   },
   "repository": {
     "type": "git",

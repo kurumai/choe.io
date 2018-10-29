@@ -20,5 +20,12 @@ describe('Trivial Application', function() {
 			tester.find('#btn-1').simulate('click');
 			expect(tester.find('#sentence').text()).to.equal('CircleCI is Continuous Integration');
 		});
+		it('should take a little time', function() {
+			const tester = mount(<Ci />);
+			expect(tester.find('#sentence').text()).to.equal('');
+			tester.find('#btn-1').simulate('click');
+			setTimeout(function() { return 1; }, 3000);
+			expect(tester.find('#sentence').text()).to.equal('CircleCI is Continuous Integration');
+		});
 	});	
 });

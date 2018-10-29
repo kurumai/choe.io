@@ -17,12 +17,20 @@ jobs:
           steps:
             - run: 
                 command: npm install
-      - run: mkdir ~/project/junit
-      - run:
-          command: npm test
-          environment:
-            MOCHA_FILE: ~/project/junit/test-results.xml
-          when: always
+      - run: mkdir -p ~/project/junit
+      - node-orb/with_splitting:
+          glob-path: "tests/**/*.spec.js"
+          test-command:
+            - run: 
+                command: npm test ${TESTFILES}
+                environment:
+                  MOCHA_FILE: ~/project/junit/test-results.xml
+                when: always
+      # - run:
+      #     command: npm test
+      #     environment:
+      #       MOCHA_FILE: ~/project/junit/test-results.xml
+      #     when: always
       - store_test_results:
           path: ~/project/junit
       - store_artifacts:
