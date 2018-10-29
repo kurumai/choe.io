@@ -17,16 +17,16 @@ jobs:
           steps:
             - run: 
                 command: npm install
-      - run: mkdir ~/junit
+      - run: mkdir ~/project/junit
       - run:
           command: npm test
           environment:
-            MOCHA_FILE: ~/junit/test-results.xml
+            MOCHA_FILE: ~/project/junit/test-results.xml
           when: always
       - store_test_results:
-          path: ~/junit
+          path: ~/project/junit
       - store_artifacts:
-          path: ~/junit
+          path: ~/project/junit
 
 workflows:
   build-test-deploy:
