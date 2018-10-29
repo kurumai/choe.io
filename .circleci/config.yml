@@ -8,6 +8,7 @@ jobs:
     executor:
       name: node-orb/node # put executor in the name
       tag: "6"
+    parallelism: 3
     steps:
       - checkout
       - node-orb/install_package_manager:
