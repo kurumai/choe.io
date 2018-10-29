@@ -20,7 +20,7 @@ jobs:
       - run: mkdir -p ~/project/junit
       - node-orb/with_splitting:
           glob-path: "tests/**/*.spec.js"
-          test-command:
+          steps:
             - run: 
                 command: npm test ${TESTFILES}
                 environment:
