@@ -22,6 +22,7 @@ jobs:
       - node-orb/with_splitting:
           glob-path: "tests/**/*.spec.js"
           steps:
+            - run: echo $BASH_ENV
             - run: 
                 command: npm test ${TESTFILES}
                 environment:
@@ -36,7 +37,7 @@ jobs:
           path: ~/project/junit
       - store_artifacts:
           path: ~/project/junit
-      - run: env
+      - run: echo $BASH_ENV
 
 workflows:
   build-test-deploy:
