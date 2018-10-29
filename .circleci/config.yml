@@ -20,7 +20,6 @@ jobs:
       - run: mkdir -p ~/project/junit
       - node-orb/with_splitting:
           glob-path: "tests/**/*.spec.js"
-          timings-type: "classname"
           steps:
             - run: env
             - run: 
