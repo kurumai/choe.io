@@ -4,8 +4,8 @@ import { expect } from 'chai';
 import { mount, shallow, render } from 'enzyme';
 import { Ci } from '../../client/components/ci/';
 
-describe('Trivial Application', function() {
-	describe('Button', function() {
+describe('Number 2 Application', function() {
+	describe('Buttons', function() {
 		it('tester2-1', function() {
 			const tester = mount(<Ci />);
 			expect(tester.state('showText')).to.equal(false);
