@@ -13,6 +13,7 @@ jobs:
       - checkout
       - node-orb/install_package_manager:
           npm: true
+          npm_version: 6.0.1
       - node-orb/with_cache:
           steps:
             - run: 
@@ -27,11 +28,6 @@ jobs:
                 environment:
                   MOCHA_FILE: ~/project/junit/test-results.xml
                 when: always
-      # - run:
-      #     command: npm test
-      #     environment:
-      #       MOCHA_FILE: ~/project/junit/test-results.xml
-      #     when: always
       - store_test_results:
           path: ~/project/junit
       - store_artifacts:
